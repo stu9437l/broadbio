@@ -4,27 +4,28 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    padding: 12px 0;
     .left-column {
       width: 25%;
       display: flex;
       align-items: center;
-      justify-content: start;
+      justify-content: flex-start;
       .menu-button {
-        font-size: 30px;
+        font-size: $xl-font;
         color: $black-color;
+        vertical-align: middle;
       }
       .search-button {
-        height: 45px;
-        width: 45px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 18px;
+        font-size: $md-font;
         color: $black-color;
         background-color: $light-white-color;
-        margin-left: 20px;
+        margin-left: 32px;
       }
     }
     .center-column {
@@ -34,22 +35,25 @@ header {
       justify-content: center;
       .brand-logo {
         img {
-          width: 260px;
+          width: 300px;
           height: auto;
         }
       }
     }
     .right-column {
       width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
       .header-social-media-list {
         display: flex;
         align-items: center;
         justify-content: start;
         .social-media__item {
           display: inline-block;
-          margin-left: 20px;
+          margin-left: 32px;
           color: $black-color;
-          font-size: 18px;
+          font-size: $md-font;
         }
       }
     }
