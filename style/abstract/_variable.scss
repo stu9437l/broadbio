@@ -1,0 +1,54 @@
+// colors
+$green-color: #14918b;
+$black-color: #12232e;
+$black-78-color: rgba(0, 0, 0, 0.75);
+$black-50-color: rgba(0, 0, 0, 0.5);
+$black-25-color: rgba(0, 0, 0, 0.25);
+$light-black-color: #616161;
+$facebook-color: #1877f2;
+$twitter-color: #1da1f2;
+$instagram-color: #c32aa3;
+$tiktok-color: #010101;
+$youtube-color: #ff0000;
+$white-color: #fff;
+$light-white-color: #f5f5f5;
+
+// fonts-size
+$xl-font: 3.2rem;
+$lg-font: 2.4rem;
+$md-font: 1.8rem;
+$sm-font: 1.6rem;
+$xs-font: 1.2rem;
+
+//font-weight
+$extra-bold: 900;
+$bold: 700;
+$semi-bold: 500;
+$regular: 400;
+
+// border-radius
+$lg-border-radius: 16px;
+$border-radius: 8px;
+$sm-border-radius: 4px;
+
+// social media colors
+.facebook--color {
+  color: $facebook-color !important;
+}
+.tiktok--color {
+  color: $tiktok-color !important;
+}
+.instagram--color {
+  color: $instagram-color !important;
+}
+.twitter--color {
+  color: $twitter-color !important;
+}
+
+//custom margin
+.mb-40px {
+  margin-bottom: 40px;
+}
+.mt-40px {
+  margin-top: 40px;
+}

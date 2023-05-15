@@ -1,0 +1,23 @@
+.article-tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  .article-tab {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: $md-font;
+    font-weight: $semi-bold;
+    margin: 0 10px 10px 0;
+  }
+  &.article-tabs--white {
+    .article-tab {
+      color: $white-color;
+      border: 1px solid $green-color;
+      border-radius: $sm-border-radius;
+      &:hover {
+        background-color: $green-color;
+      }
+    }
+  }
+}

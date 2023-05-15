@@ -1,0 +1,32 @@
+.article-card {
+  &.horizontal--card {
+    display: flex;
+    margin-bottom: 30px;
+    .image__wrapper {
+      height: 100px;
+      width: 100px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .article__content {
+      margin-left: 20px;
+      .article__tag {
+        font-size: $sm-font;
+        font-weight: $semi-bold;
+        margin-bottom: 10px;
+        &.article__tag--green {
+          color: $green-color !important;
+        }
+      }
+      .article__title {
+        font-size: 1.8rem;
+        font-weight: $semi-bold;
+        color: $black-color;
+        line-height: 1.6;
+        &.article__title--white {
+          color: $white-color !important;
+        }
+      }
+    }
+  }
+}

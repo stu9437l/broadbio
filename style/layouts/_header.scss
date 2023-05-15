@@ -1,0 +1,78 @@
+header {
+  background-color: white;
+  .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    .left-column {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      .menu-button {
+        font-size: 30px;
+        color: $black-color;
+      }
+      .search-button {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: $black-color;
+        background-color: $light-white-color;
+        margin-left: 20px;
+      }
+    }
+    .center-column {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .brand-logo {
+        img {
+          width: 260px;
+          height: auto;
+        }
+      }
+    }
+    .right-column {
+      width: 25%;
+      .header-social-media-list {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        .social-media__item {
+          display: inline-block;
+          margin-left: 20px;
+          color: $black-color;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .bottom-header-wrapper {
+    border-top: 1px solid $black-25-color;
+    border-bottom: 1px solid $black-25-color;
+    .bottom-header {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        .nav__item {
+          font-size: 2rem;
+          font-weight: $semi-bold;
+          color: $black-color;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
