@@ -4,7 +4,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 0;
+    padding: 8px 0;
     .left-column {
       width: 25%;
       display: flex;
@@ -35,7 +35,7 @@ header {
       justify-content: center;
       .brand-logo {
         img {
-          width: 300px;
+          width: 200px;
           height: auto;
         }
       }
@@ -62,7 +62,6 @@ header {
     border-top: 1px solid $black-25-color;
     border-bottom: 1px solid $black-25-color;
     .bottom-header {
-      padding: 10px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -71,10 +70,177 @@ header {
         align-items: center;
         justify-content: start;
         .nav__item {
-          font-size: 2rem;
-          font-weight: $semi-bold;
-          color: $black-color;
-          margin-right: 30px;
+          position: relative;
+          &:hover {
+            > .dropdown-list {
+              display: block;
+            }
+          }
+          .nav__link {
+            padding: 20px 0;
+            font-size: 20px;
+            font-weight: $semi-bold;
+            color: $black-color;
+            margin-right: 30px;
+          }
+          .dropdown-list {
+            position: absolute;
+            width: 200px;
+            background-color: white;
+            box-shadow: $box-shadow;
+            z-index: 3;
+            padding: 16px;
+            display: none;
+            left: 0;
+            top: 99%;
+            .dropdown-nav__link {
+              font-size: $md-font;
+              font-weight: $semi-bold;
+              display: inline-block;
+              color: $black-color;
+              padding: 5px 0;
+              transition: $transition;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 12px;
+                background-color: $green-color;
+                left: -16px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: none;
+              }
+              &:hover {
+                transform: translateX(20px);
+                color: $green-color;
+                &::after {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// menu offcanvas
+.offcanvas {
+  .button-close {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: $box-shadow;
+    border: 0;
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .offcanvas-body {
+    padding: 32px;
+  }
+  &.offcanvas--menu {
+    .menu__header {
+      position: relative;
+      margin-bottom: 40px;
+      .brand-logo {
+        // display: block;
+        // text-align: center;
+        img {
+          width: 240px;
+        }
+      }
+    }
+    .menu__body {
+      .nav-list {
+        margin-bottom: 40px;
+        .nav__item {
+          border-bottom: 1px solid $black-25-color;
+          .nav__link {
+            font-size: 20px;
+            font-weight: $semi-bold;
+            color: $black-color;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i {
+              font-size: $md-font;
+              color: $black-color;
+            }
+          }
+          .dropdown-list {
+            display: none;
+            .dropdown-nav__link {
+              font-size: $md-font;
+              font-weight: $regular;
+              display: inline-block;
+              color: $black-color;
+              padding: 5px 0;
+              transition: $transition;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 12px;
+                background-color: $green-color;
+                left: -16px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: none;
+              }
+              &:hover {
+                transform: translateX(20px);
+                color: $green-color;
+                &::after {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+      .famous-articles {
+        margin-bottom: 40px;
+      }
+      .social-media-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .social-media__item {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 8px;
+          &.facebook {
+            background-color: $facebook-color;
+          }
+          &.twitter {
+            background-color: $twitter-color;
+          }
+          &.instagram {
+            background-color: $instagram-color;
+          }
+          &.tiktok {
+            background-color: $tiktok-color;
+          }
+          i {
+            font-size: $md-font;
+            color: white;
+          }
         }
       }
     }

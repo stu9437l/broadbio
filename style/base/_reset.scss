@@ -4,15 +4,21 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 62.5%;
 }
 body {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   color: #12232e;
   background-color: white;
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
+// .row {
+//   --bs-gutter-x: 3rem;
+//   &.g-0 {
+//     --bs-gutter-x: 0rem !important;
+//   }
+// }
+
 ul {
   margin: 0;
   padding: 0;
@@ -28,4 +34,12 @@ a {
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+.section {
+  &.section--padding {
+    padding: 60px 0;
+  }
+  &.section--light {
+    background-color: $light-white-color;
+  }
 }

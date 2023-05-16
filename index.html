@@ -24,6 +24,149 @@
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
+    <div
+      class="offcanvas offcanvas-start show d-block offcanvas--menu"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-body">
+        <div class="menu__header">
+          <button class="button-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <a href="" class="brand-logo">
+            <img src="./images/logo/original-logo.png" alt="brand-logo" />
+          </a>
+        </div>
+        <div class="menu__body">
+          <ul class="nav-list">
+            <li class="nav__item">
+              <a type="button" class="nav__link">
+                Entertainment <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-list">
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Celebrity </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Movie </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> TV </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Music </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Books </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link">
+                    Cover Stories
+                  </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link">
+                    2023 Reading Challenge
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Fashion </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Beauty </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="" class="nav__link"> Wellness </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Family </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Video </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Fitness </a>
+            </li>
+          </ul>
+          <div class="famous-articles">
+            <div class="section-title">
+              <h2 class="section-title__heading">What's New Today</h2>
+            </div>
+            <ul>
+              <li>
+                <div class="article-card article-card--horizontal">
+                  <a
+                    href=""
+                    class="article__image article__image--medium article__image--circle"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </a>
+                  <div class="article__content">
+                    <a href="" class="article__tag article__tag--green">
+                      Celebrity
+                    </a>
+                    <a href="" class="article__title">
+                      Rhona Bennett Biography 2023 - Singer And Actress
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="article-card article-card--horizontal">
+                  <a
+                    href=""
+                    class="article__image article__image--medium article__image--circle"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </a>
+                  <div class="article__content">
+                    <a href="" class="article__tag article__tag--green">
+                      Celebrity
+                    </a>
+                    <a href="" class="article__title">
+                      Rhona Bennett Biography 2023 - Singer And Actress
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <h6 class="text text-md text-uppercase">Follow on Social media</h6>
+          </div>
+          <ul class="social-media-list">
+            <li>
+              <a href="" class="social-media__item facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media__item twitter">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media__item tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <header>
       <div class="top-header-wrapper">
         <div class="container">
@@ -77,27 +220,52 @@
           <div class="bottom-header">
             <nav>
               <ul class="nav-list">
-                <li>
-                  <a href="" class="nav__item"> Entertainment </a>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Entertainment </a>
+                  <ul class="dropdown-list">
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Celebrity </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Movie </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> TV </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Music </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Books </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Cover Stories </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link">
+                        2023 Reading Challenge
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="" class="nav__item"> Fashion </a>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Fashion </a>
                 </li>
-                <li>
-                  <a href="" class="nav__item"> Beauty </a>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Beauty </a>
                 </li>
 
-                <li>
-                  <a href="" class="nav__item"> Wellness </a>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Wellness </a>
                 </li>
-                <li>
-                  <a href="" class="nav__item"> Family </a>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Family </a>
                 </li>
-                <li>
-                  <a href="" class="nav__item"> Video </a>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Video </a>
                 </li>
-                <li>
-                  <a href="" class="nav__item"> Fitness </a>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Fitness </a>
                 </li>
               </ul>
             </nav>
@@ -108,6 +276,1199 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <section
+        class="section section--birthday section--padding section--light"
+      >
+        <div class="container">
+          <!-- <div class="section-title section-title--center">
+            <h2 class="section-title__heading">Must Read</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div> -->
+          <div
+            class="section-title section-title--overlay section-title--birthday"
+          >
+            <h2 class="section-title__heading">
+              <span class="text--pink"> Birthday </span>
+              Special
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="article-card article-card--birthday">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="birthday-image"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--green active"
+                  >
+                    Happy Birthday
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green"
+                    >Celebrity</a
+                  >
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--birthday active">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="birthday-image"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--green"
+                  >
+                    Happy Birthday
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green"
+                    >Celebrity</a
+                  >
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--birthday">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="birthday-image"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--green"
+                  >
+                    1 day After
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green"
+                    >Celebrity</a
+                  >
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--birthday">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="birthday-image"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--green"
+                  >
+                    1 day After
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green"
+                    >Celebrity</a
+                  >
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--main section--padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="article-card article-card--center">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/12244376/pexels-photo-12244376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="main-article"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--light-green"
+                  >
+                    Celebrity
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--center">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/12244376/pexels-photo-12244376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="main-article"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--light-green"
+                  >
+                    Celebrity
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--center">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/12244376/pexels-photo-12244376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="main-article"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--light-green"
+                  >
+                    Celebrity
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--center">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/12244376/pexels-photo-12244376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="main-article"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--light-green"
+                  >
+                    Celebrity
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section--highlight section--padding section--light"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="article-card article-card--horizontal">
+                <div class="position-relative">
+                  <div class="article__image article__image--circle">
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </div>
+                  <div class="article__count article__count--overlay">1</div>
+                </div>
+
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Celebrity
+                  </a>
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--horizontal">
+                <div class="position-relative">
+                  <div class="article__image article__image--circle">
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </div>
+                  <div class="article__count article__count--overlay">1</div>
+                </div>
+
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Celebrity
+                  </a>
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--horizontal">
+                <div class="position-relative">
+                  <div class="article__image article__image--circle">
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </div>
+                  <div class="article__count article__count--overlay">1</div>
+                </div>
+
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Celebrity
+                  </a>
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--horizontal">
+                <div class="position-relative">
+                  <div class="article__image article__image--circle">
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </div>
+                  <div class="article__count article__count--overlay">1</div>
+                </div>
+
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Celebrity
+                  </a>
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--must-read section--padding">
+        <div class="container">
+          <div class="section-title section-title--center">
+            <h2 class="section-title__heading">Must Read</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div>
+          <div class="article-card article-card---must-read">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div
+                  class="article__content text-center article__content--large"
+                >
+                  <a
+                    class="article__tag article__tag--pill article__tab--green"
+                  >
+                    FriendShip
+                  </a>
+                  <a href="" class="article__title">
+                    Joel Kim Booster On His First Asian Friend And An
+                    "Invaluable" Fight With Bowen Yang
+                  </a>
+                  <p class="article__writer">
+                    <span class="text--semi-bold">By</span> Lal Bahadur BC
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="article__image">
+                  <img
+                    src="https://images.pexels.com/photos/1860074/pexels-photo-1860074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="article-image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--you-know section--padding">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="section-title__heading">Now you know</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div>
+          <div class="row g-0">
+            <div class="col-md-3">
+              <div class="article-card article-card--overlay">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/4906284/pexels-photo-4906284.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="overlay-image"
+                  />
+
+                  <div class="article__content">
+                    <div class="article__tag article__tag--green">
+                      Colurfull
+                    </div>
+                    <div class="article__title article__title--white">
+                      Kevin Costner's Filming Schedule Reportedly Led to
+                      Christine
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--overlay">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/4906284/pexels-photo-4906284.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="overlay-image"
+                  />
+
+                  <div class="article__content">
+                    <div class="article__tag article__tag--green">
+                      Colurfull
+                    </div>
+                    <div class="article__title article__title--white">
+                      Kevin Costner's Filming Schedule Reportedly Led to
+                      Christine
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--overlay">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/4906284/pexels-photo-4906284.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="overlay-image"
+                  />
+
+                  <div class="article__content">
+                    <div class="article__tag article__tag--green">
+                      Colurfull
+                    </div>
+                    <div class="article__title article__title--white">
+                      Kevin Costner's Filming Schedule Reportedly Led to
+                      Christine
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--overlay">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/4906284/pexels-photo-4906284.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="overlay-image"
+                  />
+
+                  <div class="article__content">
+                    <div class="article__tag article__tag--green">
+                      Colurfull
+                    </div>
+                    <div class="article__title article__title--white">
+                      Kevin Costner's Filming Schedule Reportedly Led to
+                      Christine
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--fitness section--padding">
+        <div class="container">
+          <div class="section-title section-title--center">
+            <h2 class="section-title__heading">Fitness</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <ul>
+                <li>
+                  <div class="article-card article-card--horizontal">
+                    <a href="" class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Mental Health Podcasts Will Make You
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-card article-card--horizontal">
+                    <a href="" class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Mental Health Podcasts Will Make You
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-card article-card--horizontal">
+                    <a href="" class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Mental Health Podcasts Will Make You
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-card article-card--horizontal">
+                    <a href="" class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Mental Health Podcasts Will Make You
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="article-card">
+                <div class="article__image article__image--large">
+                  <img
+                    src="https://images.pexels.com/photos/1860074/pexels-photo-1860074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="article-image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="article__content text-center article__content--large"
+                >
+                  <a
+                    class="article__tag article__tag--pill article__tab--green"
+                  >
+                    FriendShip
+                  </a>
+                  <a href="" class="article__title">
+                    Joel Kim Booster On His First Asian Friend And An
+                    "Invaluable" Fight With Bowen Yang
+                  </a>
+                  <p class="article__writer">
+                    <span class="text--semi-bold">By</span> Lal Bahadur BC
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li>
+                  <div
+                    class="article-card article-card--horizontal article-card--reversed"
+                  >
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Mental Health Podcasts Will Make You
+                      </a>
+                    </div>
+                    <a href="" class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="article-card article-card--horizontal article-card--reversed"
+                  >
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Mental Health Podcasts Will Make You
+                      </a>
+                    </div>
+                    <a href="" class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="article-card article-card--horizontal article-card--reversed"
+                  >
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Mental Health Podcasts Will Make You
+                      </a>
+                    </div>
+                    <a href="" class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="article-card article-card--horizontal article-card--reversed"
+                  >
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Mental Health Podcasts Will Make You
+                      </a>
+                    </div>
+                    <a href="" class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section--editor-pick section--padding section--light"
+      >
+        <div class="container">
+          <div class="section-title">
+            <h2 class="section-title__heading">Editors’ Picks</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--fashion section--padding">
+        <div class="container">
+          <div class="section-title section-title--center">
+            <h2 class="section-title__heading">PicksFashion & Beauty</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div>
+          <div class="grid-fashion-layout">
+            <div class="article-card article-card-1"></div>
+            <div class="article-card article-card-1"></div>
+            <div class="article-card article-card-1"></div>
+            <div class="article-card article-card-1"></div>
+            <!-- <div class="row"> -->
+            <div class="col-md-6">
+              <div class="article-card article-card--overlay article-card--xl">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/4906284/pexels-photo-4906284.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="overlay-image"
+                  />
+
+                  <div class="article__content">
+                    <div class="article__tag article__tag--green">
+                      Colurfull
+                    </div>
+                    <div class="article__title article__title--white">
+                      Kevin Costner's Filming Schedule Reportedly Led to
+                      Christine
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--living section--padding section--light">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="section-title__heading">Living</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                class="article-card article-card--horizontal article-card--reversed text-start"
+              >
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="article-card article-card--horizontal article-card--reversed text-start"
+              >
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="article-card article-card--horizontal article-card--reversed text-start"
+              >
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="article-card article-card--horizontal article-card--reversed text-start"
+              >
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="article-card article-card--horizontal article-card--reversed text-start"
+              >
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="article-card article-card--horizontal article-card--reversed text-start"
+              >
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--main-10 section--padding">
+        <div class="container">
+          <div class="section-title section-title--center">
+            <h2 class="section-title__heading">Celebrity</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li>
+                  <div class="article-card article-card--horizontal">
+                    <a href="" class="article__image article__image--large">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Taylor Swift-Inspired Cocktails Are Perfect For
+                        Pregaming the Eras Tour
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-card article-card--horizontal">
+                    <a href="" class="article__image article__image--large">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Taylor Swift-Inspired Cocktails Are Perfect For
+                        Pregaming the Eras Tour
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-card article-card--horizontal">
+                    <a href="" class="article__image article__image--large">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Taylor Swift-Inspired Cocktails Are Perfect For
+                        Pregaming the Eras Tour
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-card article-card--horizontal">
+                    <a href="" class="article__image article__image--large">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </a>
+                    <div class="article__content">
+                      <a href="" class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </a>
+                      <a href="" class="article__title">
+                        These Taylor Swift-Inspired Cocktails Are Perfect For
+                        Pregaming the Eras Tour
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="article-card">
+                <div class="article__image article__image--large">
+                  <img
+                    src="https://images.pexels.com/photos/1860074/pexels-photo-1860074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="article-image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="article__content text-start article__content--large"
+                >
+                  <a
+                    class="article__tag article__tag--pill article__tab--green"
+                  >
+                    FriendShip
+                  </a>
+                  <a href="" class="article__title">
+                    Joel Kim Booster On His First Asian Friend And An
+                    "Invaluable" Fight With Bowen Yang
+                  </a>
+                  <p class="article__writer">
+                    <span class="text--semi-bold">By</span> Lal Bahadur BC
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--main-11 section--padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="section-title section-title--center">
+                <h2 class="section-title__heading">Lifestyle</h2>
+              </div>
+              <div class="article-card article-card--overlay">
+                <a href="" class="article__image mb-0">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/4906284/pexels-photo-4906284.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="overlay-image"
+                  />
+
+                  <div class="article__content">
+                    <div class="article__tag article__tag--green">
+                      Colurfull
+                    </div>
+                    <div class="article__title article__title--white">
+                      Kevin Costner's Filming Schedule Reportedly Led to
+                      Christine
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <ul class="article-list article-list--bordered">
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="top-footer-wrapper">
         <div class="container">
@@ -151,8 +1512,8 @@
               </h3>
               <ul class="article-list">
                 <li>
-                  <a href="" class="article-card horizontal--card">
-                    <div class="image__wrapper">
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
                       <img
                         class="img-fluid"
                         src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -170,8 +1531,8 @@
                   </a>
                 </li>
                 <li>
-                  <a href="" class="article-card horizontal--card">
-                    <div class="image__wrapper">
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
                       <img
                         class="img-fluid"
                         src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -189,8 +1550,8 @@
                   </a>
                 </li>
                 <li>
-                  <a href="" class="article-card horizontal--card">
-                    <div class="image__wrapper">
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
                       <img
                         class="img-fluid"
                         src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -271,6 +1632,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <!-- jquery cdn -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
@@ -278,5 +1640,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- custom script -->
+    <script src="./script/script.js"></script>
   </body>
 </html>

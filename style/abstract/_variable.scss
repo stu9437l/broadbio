@@ -14,11 +14,11 @@ $white-color: #fff;
 $light-white-color: #f5f5f5;
 
 // fonts-size
-$xl-font: 3.2rem;
-$lg-font: 2.4rem;
-$md-font: 1.8rem;
-$sm-font: 1.6rem;
-$xs-font: 1.2rem;
+$xl-font: 2rem;
+$lg-font: 1.5rem;
+$md-font: 1.125rem;
+$sm-font: 1rem;
+$xs-font: 0.75rem;
 
 //font-weight
 $extra-bold: 900;
@@ -30,6 +30,12 @@ $regular: 400;
 $lg-border-radius: 16px;
 $border-radius: 8px;
 $sm-border-radius: 4px;
+
+//transition time
+$transition: 0.3s ease-in-out;
+
+//box-shadow
+$box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
 
 // social media colors
 .facebook--color {

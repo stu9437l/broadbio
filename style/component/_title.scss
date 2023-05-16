@@ -1,0 +1,36 @@
+.section-title {
+  margin-bottom: 40px;
+  &.section-title--overlay {
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 116px;
+      font-weight: $extra-bold;
+      z-index: -1;
+      opacity: 0.05;
+    }
+    &.section-title--birthday {
+      &::after {
+        content: "Birthday Special";
+      }
+    }
+  }
+  &.section-title--center {
+    text-align: center;
+  }
+  .section-title__heading {
+    font-size: $xl-font;
+    color: $black-color;
+    margin-bottom: 16px;
+    font-weight: $bold;
+  }
+  .section-title__description {
+    font-size: $md-font;
+    margin-bottom: 0;
+  }
+}

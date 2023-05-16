@@ -15,16 +15,28 @@ p {
   font-size: $md-font;
   font-weight: $regular;
   color: $black-color;
-  &.text--lg {
-    font-size: $lg-font !important;
-  }
-  &.text--white {
-    color: white !important;
-  }
-  &.text--bold {
-    font-weight: $bold !important;
-  }
-  &.text--light {
-    font-weight: 300 !important;
-  }
+}
+
+// text sizes
+.text--lg {
+  font-size: $lg-font !important;
+}
+
+// text colors
+.text--white {
+  color: white !important;
+}
+.text--pink {
+  color: #ff6b6b !important;
+}
+
+//text font weights
+.text--bold {
+  font-weight: $bold !important;
+}
+.text--semi-bold {
+  font-weight: $semi-bold !important;
+}
+.text--light {
+  font-weight: 300 !important;
 }
