@@ -1,8 +1,8 @@
 .button {
-  height: 45px;
+  height: 48px;
   display: flex;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 24px;
   font-size: $md-font;
   font-weight: 500;
   &.button--green {
@@ -12,5 +12,10 @@
   }
   &.button--pill {
     border-radius: 25px;
+  }
+  &.button--lg {
+    height: 64px;
+    font-size: $lg-font;
+    font-weight: $semi-bold;
   }
 }

@@ -1,0 +1,17 @@
+.table-of-content {
+  border: 1px solid $black-25-color;
+  padding: 32px;
+  .table-of-content__title {
+    font-size: $lg-font;
+    font-weight: $bold;
+    color: $black-color;
+    margin-bottom: 32px;
+  }
+  .content-list {
+    .content__item {
+      font-size: $md-font;
+      color: $black-color;
+      margin-bottom: 16px;
+    }
+  }
+}

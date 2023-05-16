@@ -1,0 +1,38 @@
+.job-list {
+  .job__item {
+    background-color: $light-white-color;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    .job__image {
+      height: 64px;
+      width: 64px;
+      border-radius: 0;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .job__content {
+      margin-left: 24px;
+    }
+    .job__tittle {
+      font-size: $lg-font;
+      font-weight: $bold;
+      color: $bold;
+      margin-bottom: 4px;
+      color: $black-color;
+    }
+    .job__date {
+      font-size: $md-font;
+      color: $light-black-color;
+      margin-bottom: 0;
+      font-weight: $regular;
+    }
+    .job__salary {
+      font-size: $sm-font;
+      color: $light-black-color;
+      margin-bottom: 0;
+      font-weight: $semi-bold;
+    }
+  }
+}

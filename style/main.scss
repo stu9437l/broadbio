@@ -8,10 +8,17 @@
 //components
 @import "./component/button";
 @import "./component/title";
+@import "./component/input";
+@import "./component/breadcrumb";
 @import "./component/tag-text";
 @import "./component/horizonatal-card";
 @import "./component/category-tab";
+@import "./component/table-of-content";
 
 //layouts
 @import "./layouts/header";
 @import "./layouts/footer";
+
+//pages
+@import "./pages/contact";
+@import "./pages/job";

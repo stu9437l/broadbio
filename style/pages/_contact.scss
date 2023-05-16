@@ -1,0 +1,18 @@
+.contact-form {
+  position: relative;
+  padding: 64px;
+  background-color: white;
+  transform-style: preserve-3d;
+//   border: 1px solid $black-25-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: calc(100% + 32px);
+    width: calc(100% + 32px);
+    left: -16px;
+    top: -16px;
+    background-color: $light-white-color;
+    transform: translateZ(-1px);
+  }
+}

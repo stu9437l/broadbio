@@ -25,14 +25,13 @@
   </head>
   <body>
     <div
-      class="offcanvas offcanvas-start show d-block offcanvas--menu"
+      class="offcanvas offcanvas-start offcanvas--menu"
       tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
+      id="offacanvas__menu"
     >
       <div class="offcanvas-body">
         <div class="menu__header">
-          <button class="button-close">
+          <button class="button-close" data-bs-dismiss="offcanvas">
             <i class="fa-solid fa-xmark"></i>
           </button>
           <a href="" class="brand-logo">
@@ -167,17 +166,99 @@
         </div>
       </div>
     </div>
+    <div
+      class="modal fade modal--search"
+      id="modal__search"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="button-close" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="col-md-6 mx-auto">
+              <div class="section-title section-title--center">
+                <h2 class="section-title__heading">
+                  Press <span class="text-danger">ESC</span> to close
+                </h2>
+              </div>
+              <div class="search-wrapper">
+                <form action="">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Type to start your search"
+                  />
+                </form>
+                <button
+                  type="submit"
+                  class="button-search-icon search-icon--overlay"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <div class="search-categories">
+                <div class="section-title section-title--center">
+                  <h3 class="section-title__subheading">
+                    Or check Popular Category
+                  </h3>
+                </div>
+                <ul
+                  class="article-tabs-list article-tabs--green justify-content-center"
+                >
+                  <li>
+                    <a href="" class="article__tab"> # Fitness </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Entertainment </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Sports </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Fashion </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Video </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Family </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Nature </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Welness </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
       <div class="top-header-wrapper">
         <div class="container">
           <div class="top-header">
             <div class="left-column">
-              <a href="" class="menu-button">
+              <button
+                class="menu-button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offacanvas__menu"
+              >
                 <i class="fa-solid fa-bars"></i>
-              </a>
-              <a href="" class="search-button">
+              </button>
+              <button
+                class="search-button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal__search"
+              >
                 <i class="fa-solid fa-magnifying-glass"></i>
-              </a>
+              </button>
             </div>
             <div class="center-column">
               <a href="" class="brand-logo">
@@ -1574,28 +1655,28 @@
               <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
               <ul class="article-tabs-list article-tabs--white">
                 <li>
-                  <a href="" class="article-tab"> # Fitness </a>
+                  <a href="" class="article__tab"> # Fitness </a>
                 </li>
                 <li>
-                  <a href="" class="article-tab"> # Entertainment </a>
+                  <a href="" class="article__tab"> # Entertainment </a>
                 </li>
                 <li>
-                  <a href="" class="article-tab"> # Sports </a>
+                  <a href="" class="article__tab"> # Sports </a>
                 </li>
                 <li>
-                  <a href="" class="article-tab"> # Fashion </a>
+                  <a href="" class="article__tab"> # Fashion </a>
                 </li>
                 <li>
-                  <a href="" class="article-tab"> # Video </a>
+                  <a href="" class="article__tab"> # Video </a>
                 </li>
                 <li>
-                  <a href="" class="article-tab"> # Family </a>
+                  <a href="" class="article__tab"> # Family </a>
                 </li>
                 <li>
-                  <a href="" class="article-tab"> # Nature </a>
+                  <a href="" class="article__tab"> # Nature </a>
                 </li>
                 <li>
-                  <a href="" class="article-tab"> # Welness </a>
+                  <a href="" class="article__tab"> # Welness </a>
                 </li>
               </ul>
             </div>

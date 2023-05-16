@@ -1,0 +1,38 @@
+.section--breadcrumb {
+  background-color: $light-white-color;
+  padding: 24px 0;
+  .breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .breadcrumb-nav__item {
+      margin-right: 32px;
+      font-size: $md-font;
+      color: $black-color;
+      font-weight: $regular;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "\f054";
+        font-size: 14px;
+        color: $black-color;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        right: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      .breadcrumb-nav__link {
+        color: $green-color;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

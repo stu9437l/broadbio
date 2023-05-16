@@ -1,7 +1,7 @@
 .article-tabs-list {
   display: flex;
   flex-wrap: wrap;
-  .article-tab {
+  .article__tab {
     height: 40px;
     display: flex;
     align-items: center;
@@ -11,12 +11,23 @@
     margin: 0 10px 10px 0;
   }
   &.article-tabs--white {
-    .article-tab {
+    .article__tab {
       color: $white-color;
       border: 1px solid $green-color;
       border-radius: $sm-border-radius;
       &:hover {
         background-color: $green-color;
+      }
+    }
+  }
+  &.article-tabs--green {
+    .article__tab {
+      color: $green-color;
+      border: 1px solid $green-color;
+      border-radius: $sm-border-radius;
+      &:hover {
+        background-color: $green-color;
+        color: white;
       }
     }
   }

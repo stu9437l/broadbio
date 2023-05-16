@@ -16,4 +16,3 @@ menuLink.each(function () {
     }
   });
 });
-console.log(toggleIcon);
