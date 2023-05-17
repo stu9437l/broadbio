@@ -254,6 +254,10 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+.form-control::file-selector-button {
+  padding: 16px 24px;
+}
+
 .label {
   font-size: 1.125rem;
   font-weight: 600;
@@ -1119,5 +1123,107 @@ footer .bottom-footer-wrapper .bottom-footer .footer-quicks-nav .nav__item:hover
   color: #616161;
   margin-bottom: 0;
   font-weight: 500;
+}
+
+.job-detail .job-detail__header {
+  margin-bottom: 40px;
+}
+
+.job-detail .job-detail__header .job__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #12232e;
+  margin-bottom: 16px;
+}
+
+.job-detail .job-detail__header .job__date {
+  font-size: 1.125rem;
+  color: #616161;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.job-detail .job-detail__header .job__date .job__view {
+  color: #14918b;
+}
+
+.job-detail .job-detail__header .job__description {
+  font-size: 1.125rem;
+  color: #12232e;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+.job-detail .job-detail__body .job__content {
+  margin-bottom: 40px;
+}
+
+.job-detail .job-detail__body .job__content .job__subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #12232e;
+  margin-bottom: 24px;
+}
+
+.job-detail .stripe-list .stripe__item {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.job-detail .stripe-list .stripe__item:nth-child(2n-1) {
+  background-color: #f5f5f5;
+}
+
+.job-detail .stripe-list .stripe__item:nth-child(2n) {
+  background-color: white;
+}
+
+.job-detail .stripe-list .stripe__item .job__label {
+  width: 200px;
+  color: #12232e;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.job-detail .stripe-list .stripe__item .label__devider {
+  margin-right: 32px;
+}
+
+.job-detail .stripe-list .stripe__item .job__text {
+  color: #12232e;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.job-detail .stripe-list .stripe__item .job__text.job__text--green {
+  color: #14918b;
+}
+
+.job-detail .description-list {
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.job-detail .description-list .deccription__item {
+  margin-bottom: 12px;
+}
+
+.job__note {
+  text-align: center;
+  font-size: 1rem;
+  color: #616161;
+  margin-bottom: 0;
+  margin-top: 24px;
+  font-weight: 400;
+}
+
+.modal--jobApply-form .modal-body {
+  padding: 64px;
+}
+
+.modal--jobApply-form .modal-body .button-close {
+  top: 12px;
+  right: 12px;
 }
 /*# sourceMappingURL=main.css.map */

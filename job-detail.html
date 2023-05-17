@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BroadBio Bi</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome 6 icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <div
+      class="offcanvas offcanvas-start offcanvas--menu"
+      tabindex="-1"
+      id="offacanvas__menu"
+    >
+      <div class="offcanvas-body">
+        <div class="menu__header">
+          <button class="button-close" data-bs-dismiss="offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <a href="" class="brand-logo">
+            <img src="./images/logo/original-logo.png" alt="brand-logo" />
+          </a>
+        </div>
+        <div class="menu__body">
+          <ul class="nav-list">
+            <li class="nav__item">
+              <a type="button" class="nav__link">
+                Entertainment <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-list">
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Celebrity </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Movie </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> TV </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Music </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Books </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link">
+                    Cover Stories
+                  </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link">
+                    2023 Reading Challenge
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Fashion </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Beauty </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="" class="nav__link"> Wellness </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Family </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Video </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Fitness </a>
+            </li>
+          </ul>
+          <div class="famous-articles">
+            <div class="section-title">
+              <h2 class="section-title__heading">What's New Today</h2>
+            </div>
+            <ul>
+              <li>
+                <div class="article-card article-card--horizontal">
+                  <a
+                    href=""
+                    class="article__image article__image--medium article__image--circle"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </a>
+                  <div class="article__content">
+                    <a href="" class="article__tag article__tag--green">
+                      Celebrity
+                    </a>
+                    <a href="" class="article__title">
+                      Rhona Bennett Biography 2023 - Singer And Actress
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="article-card article-card--horizontal">
+                  <a
+                    href=""
+                    class="article__image article__image--medium article__image--circle"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </a>
+                  <div class="article__content">
+                    <a href="" class="article__tag article__tag--green">
+                      Celebrity
+                    </a>
+                    <a href="" class="article__title">
+                      Rhona Bennett Biography 2023 - Singer And Actress
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <h6 class="text text-md text-uppercase">Follow on Social media</h6>
+          </div>
+          <ul class="social-media-list">
+            <li>
+              <a href="" class="social-media__item facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media__item twitter">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media__item tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade modal--search"
+      id="modal__search"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="button-close" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="col-md-6 mx-auto">
+              <div class="section-title section-title--center">
+                <h2 class="section-title__heading">
+                  Press <span class="text-danger">ESC</span> to close
+                </h2>
+              </div>
+              <div class="search-wrapper">
+                <form action="">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Type to start your search"
+                  />
+                </form>
+                <button
+                  type="submit"
+                  class="button-search-icon search-icon--overlay"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <div class="search-categories">
+                <div class="section-title section-title--center">
+                  <h3 class="section-title__subheading">
+                    Or check Popular Category
+                  </h3>
+                </div>
+                <ul
+                  class="article-tabs-list article-tabs--green justify-content-center"
+                >
+                  <li>
+                    <a href="" class="article__tab"> # Fitness </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Entertainment </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Sports </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Fashion </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Video </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Family </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Nature </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Welness </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- job apply form -->
+    <div
+      class="modal fade modal--jobApply-form"
+      id="modal__jobApply-form"
+      tabindex="-1"
+      aria-labelledby="modal--jobApply-form"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="button-close" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="section-title section-title--center">
+              <h2 class="section-title__heading">Apply for the jov</h2>
+              <p class="section-title__description">
+                All required Field Should be filled
+              </p>
+            </div>
+            <div class="form">
+              <div class="input-field">
+                <lable class="label" for="fullname">
+                  Full Name <span class="is-required">*</span>
+                </lable>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=""
+                  name="fullname"
+                  id="fullname"
+                />
+              </div>
+              <div class="input-field">
+                <lable class="label" for="email">
+                  Email <span class="is-required">*</span>
+                </lable>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=""
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="input-field">
+                <lable class="label" for="upload-cv">
+                  Upload Your Cv <span class="is-required">*</span>
+                </lable>
+                <input
+                  type="file"
+                  class="form-control ps-0"
+                  placeholder=""
+                  name="upload-cv"
+                  id="upload-cv"
+                />
+              </div>
+              <div class="input-field">
+                <lable class="label" for="message"> Message </lable>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  class="form-control pt-3"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="button button--green button--lg w-100 d-block mt-4"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="top-header-wrapper">
+        <div class="container">
+          <div class="top-header">
+            <div class="left-column">
+              <button
+                class="menu-button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offacanvas__menu"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <button
+                class="search-button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal__search"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="center-column">
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
+            </div>
+            <div class="right-column">
+              <ul class="header-social-media-list">
+                <li>
+                  <a href="" class="social-media__item facebook--color">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item instagram--color">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item twitter--color">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item tiktok--color">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header-wrapper">
+        <div class="container">
+          <div class="bottom-header">
+            <nav>
+              <ul class="nav-list">
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Entertainment </a>
+                  <ul class="dropdown-list">
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Celebrity </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Movie </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> TV </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Music </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Books </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Cover Stories </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link">
+                        2023 Reading Challenge
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Fashion </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Beauty </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Wellness </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Family </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Video </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Fitness </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="" class="button button--green button--pill">
+              Submit Your Biography
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section--breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb-nav">
+            <li class="breadcrumb-nav__item">
+              <a href="" class="breadcrumb-nav__link"> Home </a>
+            </li>
+            <li class="breadcrumb-nav__item">
+              <a href="" class="breadcrumb-nav__link"> Categories </a>
+            </li>
+            <li class="breadcrumb-nav__item">Job List</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--job section--padding">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-8">
+              <div class="job-detail">
+                <div class="job-detail__header">
+                  <h2 class="job__title">Demand Planinng Analyst</h2>
+                  <p class="job__date">
+                    <span class="job__view">View 23 |</span>
+                    <span>Apply Before: 1 week, 2 days from now</span>
+                  </p>
+                  <p class="job__description">
+                    The Nepal Business Institute (NBI) is an academic
+                    organization that takes the lead in creating enabling
+                    environment for entrepreneurship development and business
+                    promotion at the national level. NBI is founded with the
+                    core objective of "Learning Business, Inspiring Growth" and
+                    strives to plan Nepal's economic development through
+                    entrepreneurship and innovation.
+                  </p>
+                </div>
+                <div class="job-detail__body">
+                  <div class="job__content">
+                    <h3 class="job__subtitle">Basic Job Information</h3>
+                    <ul class="stripe-list">
+                      <li class="stripe__item">
+                        <span class="job__label"> Job Category </span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          Project Management
+                        </div>
+                      </li>
+                      <li class="stripe__item">
+                        <span class="job__label"> Job Level </span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          Mid Level
+                        </div>
+                      </li>
+                      <li class="stripe__item">
+                        <span class="job__label"> No. of Vacancy/s </span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          [1]
+                        </div>
+                      </li>
+                      <li class="stripe__item">
+                        <span class="job__label"> Employment Type </span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          Full Time
+                        </div>
+                      </li>
+                      <li class="stripe__item">
+                        <span class="job__label">Job Location </span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          Kathmandu,Nepal
+                        </div>
+                      </li>
+                      <li class="stripe__item">
+                        <span class="job__label">Offered Salary</span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          NPR. 20,000
+                        </div>
+                      </li>
+                      <li class="stripe__item">
+                        <span class="job__label">Apply Before(Deadline) </span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          May. 24, 2023 23:55 (1 week, 2 days from now)
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="job__content">
+                    <h3 class="job__subtitle">Job Specification</h3>
+                    <ul class="stripe-list">
+                      <li class="stripe__item">
+                        <span class="job__label"> Education Level </span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          Under Graduate (Bachelor)
+                        </div>
+                      </li>
+                      <li class="stripe__item">
+                        <span class="job__label"> Experience Required </span>
+                        <div class="job__text">
+                          <span class="label__devider">:</span>
+                          More than or equals to 2 years
+                        </div>
+                      </li>
+                      <li class="stripe__item">
+                        <span class="job__label">
+                          Professional Skill Required
+                        </span>
+                        <div class="job__text job__text--green">
+                          <span class="label__devider">:</span>
+                          Marketing, Communication, Time Management
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="job__content">
+                    <h3 class="job__subtitle">Basic Job Information</h3>
+                    <ul class="description-list">
+                      <li class="deccription__item">
+                        Must have a Bachelors’/ Masters’ degree in related
+                        applicable field
+                      </li>
+                      <li class="deccription__item">
+                        Should have strong English and Nepali communication
+                        including writing skills
+                      </li>
+                      <li class="deccription__item">
+                        Fresh Graduates may also apply
+                      </li>
+                      <li class="deccription__item">
+                        Applicants with 6 months to 2 years’ experience in a
+                        marketing/advertising agency/event management would be
+                        given high preference
+                      </li>
+                      <li class="deccription__item">
+                        Managing events in a challenging environment and
+                        addressing l problems that may arise
+                      </li>
+                      <li class="deccription__item">
+                        Must have good writing skill and maintaining
+                        relationships with partner organizations, speakers and
+                        delegates
+                      </li>
+                      <li class="deccription__item">
+                        Should be a self-motivated and result-driven Individual
+                        interested in Exhibition/demonstrative Sales, Marketing
+                        and Management
+                      </li>
+                      <li class="deccription__item">
+                        Should be target focused and develop strategies for
+                        better return
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="d-flex justify-content-center flex-column text-center align-items-center sticky-md-top"
+              >
+                <button
+                  class="button button--green"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal__jobApply-form"
+                >
+                  Apply Now
+                </button>
+                <p class="job__note">
+                  (Note : Clearly understand the job title and description to
+                  ensure it aligns with your skills, experience, and career
+                  goals.)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="top-footer-wrapper">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-md-4 pe-5">
+              <h3 class="text text--lg text--white text--bold mb-40px">
+                About US
+              </h3>
+              <p class="text text--white text--light">
+                To achieve this, we would like to propose a meeting with the
+                BinLearn team to discuss the project's enhancing plan. During
+                the meeting, we can review the research findings and present our
+                recommendations for improving the website's UI. We believe that
+                by implementing these changes, we can attract more users and
+                provide them with a more engaging learning environment.
+              </p>
+              <ul class="footer-contact-list">
+                <li>
+                  <h5 class="contact__item">
+                    <span class="contact-label"> Phone : </span>
+                    <span class="text-value"> +9800123456 </span>
+                  </h5>
+                </li>
+                <li>
+                  <h5 class="contact__item">
+                    <span class="contact-label"> Tel: </span>
+                    <span class="text-value"> +1-541-234-3010 </span>
+                  </h5>
+                </li>
+                <li>
+                  <h5 class="contact__item">
+                    <span class="contact-label"> Email : </span>
+                    <span class="text-value"> broadbiography@gmail.com </span>
+                  </h5>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 px-5">
+              <h3 class="text text--lg text--white text--bold mb-40px">
+                Latest Posts
+              </h3>
+              <ul class="article-list">
+                <li>
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </div>
+                    <div class="article__content">
+                      <h6 class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </h6>
+                      <h4 class="article__title article__title--white">
+                        These Mental Health Podcasts Will Make You
+                      </h4>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </div>
+                    <div class="article__content">
+                      <h6 class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </h6>
+                      <h4 class="article__title article__title--white">
+                        These Mental Health Podcasts Will Make You
+                      </h4>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </div>
+                    <div class="article__content">
+                      <h6 class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </h6>
+                      <h4 class="article__title article__title--white">
+                        These Mental Health Podcasts Will Make You
+                      </h4>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 ps-5">
+              <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
+              <ul class="article-tabs-list article-tabs--white">
+                <li>
+                  <a href="" class="article__tab"> # Fitness </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Entertainment </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Sports </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Fashion </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Video </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Family </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Nature </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Welness </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer-wrapper">
+        <div class="container">
+          <div class="bottom-footer">
+            <p class="copyright-text">
+              @2023: all copyright reserved to topnepal
+            </p>
+            <ul class="footer-quicks-nav">
+              <li>
+                <a href="" class="nav__item"> Privacy policy </a>
+              </li>
+              <li>
+                <a href="" class="nav__item"> About us </a>
+              </li>
+              <li>
+                <a href="" class="nav__item"> 24 Support </a>
+              </li>
+              <li>
+                <a href="" class="nav__item"> Contact us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- boostrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- custom script -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>

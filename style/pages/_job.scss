@@ -36,3 +36,98 @@
     }
   }
 }
+.job-detail {
+  .job-detail__header {
+    margin-bottom: 40px;
+    .job__title {
+      font-size: $xl-font;
+      font-weight: $bold;
+      color: $black-color;
+      margin-bottom: 16px;
+    }
+    .job__date {
+      font-size: $md-font;
+      color: $light-black-color;
+      margin-bottom: 16px;
+      font-weight: $regular;
+      .job__view {
+        color: $green-color;
+      }
+    }
+    .job__description {
+      font-size: $md-font;
+      color: $black-color;
+      margin-bottom: 0px;
+      font-weight: $regular;
+    }
+  }
+
+  .job-detail__body {
+    .job__content {
+      margin-bottom: 40px;
+      .job__subtitle {
+        font-size: $lg-font;
+        font-weight: $bold;
+        color: $black-color;
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .stripe-list {
+    .stripe__item {
+      &:nth-child(2n-1) {
+        background-color: $light-white-color;
+      }
+      &:nth-child(2n) {
+        background-color: white;
+      }
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      .job__label {
+        width: 200px;
+        color: $black-color;
+        font-size: $md-font;
+        font-weight: $regular;
+      }
+      .label__devider {
+        margin-right: 32px;
+      }
+      .job__text {
+        color: $black-color;
+        font-size: $md-font;
+        font-weight: $semi-bold;
+        &.job__text--green {
+          color: $green-color;
+        }
+      }
+    }
+  }
+  .description-list {
+    list-style: circle;
+    list-style-position: inside;
+    .deccription__item {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.job__note {
+  text-align: center;
+  font-size: $sm-font;
+  color: $light-black-color;
+  margin-bottom: 0;
+  margin-top: 24px;
+  font-weight: $regular;
+}
+
+// job apply modal form
+.modal--jobApply-form {
+  .modal-body {
+    padding: 64px;
+    .button-close {
+      top: 12px;
+      right: 12px;
+    }
+  }
+}

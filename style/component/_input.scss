@@ -24,6 +24,9 @@
   }
 }
 
+.form-control::file-selector-button {
+  padding:16px 24px;
+}
 //labels
 .label {
   font-size: $md-font;
