@@ -146,6 +146,92 @@ header {
   top: 0px;
   right: 0px;
 }
+
+//social medias
+.social-media-list {
+  &.socila-media--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .social-media__item {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 8px;
+      &.facebook {
+        background-color: $facebook-color;
+      }
+      &.twitter {
+        background-color: $twitter-color;
+      }
+      &.instagram {
+        background-color: $instagram-color;
+      }
+      &.tiktok {
+        background-color: $tiktok-color;
+      }
+      i {
+        font-size: $md-font;
+        color: white;
+      }
+    }
+  }
+  &.socila-media--square {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    .social-media__item {
+      height: 56px;
+      width: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: $lg-font !important;
+      }
+      &.facebook {
+        background-color: $facebook-color;
+      }
+      &.twitter {
+        background-color: $twitter-color;
+      }
+      &.instagram {
+        background-color: $instagram-color;
+      }
+      &.tiktok {
+        background-color: $tiktok-color;
+      }
+      i {
+        font-size: $md-font;
+        color: white;
+      }
+    }
+    .social-media__content {
+      text-align: left;
+      margin-left: 24px;
+      .social-media__count {
+        font-size: $lg-font;
+        font-weight: $bold;
+        color: $black-color;
+        margin-bottom: 4px;
+      }
+      .social-media__text {
+        font-size: $md-font;
+        color: $green-color;
+        font-weight: $regular;
+      }
+    }
+  }
+}
+
 // menu offcanvas
 .offcanvas {
   .offcanvas-body {
@@ -215,36 +301,6 @@ header {
       }
       .famous-articles {
         margin-bottom: 40px;
-      }
-      .social-media-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .social-media__item {
-          height: 40px;
-          width: 40px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 8px;
-          &.facebook {
-            background-color: $facebook-color;
-          }
-          &.twitter {
-            background-color: $twitter-color;
-          }
-          &.instagram {
-            background-color: $instagram-color;
-          }
-          &.tiktok {
-            background-color: $tiktok-color;
-          }
-          i {
-            font-size: $md-font;
-            color: white;
-          }
-        }
       }
     }
   }

@@ -10,6 +10,7 @@
 @import "./component/title";
 @import "./component/input";
 @import "./component/breadcrumb";
+@import "./component/pagination";
 @import "./component/tag-text";
 @import "./component/horizonatal-card";
 @import "./component/category-tab";
@@ -20,5 +21,6 @@
 @import "./layouts/footer";
 
 //pages
+@import "./pages/detail";
 @import "./pages/contact";
 @import "./pages/job";

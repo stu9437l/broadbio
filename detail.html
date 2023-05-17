@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BroadBio Bi</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome 6 icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <div
+      class="offcanvas offcanvas-start offcanvas--menu"
+      tabindex="-1"
+      id="offacanvas__menu"
+    >
+      <div class="offcanvas-body">
+        <div class="menu__header">
+          <button class="button-close" data-bs-dismiss="offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <a href="" class="brand-logo">
+            <img src="./images/logo/original-logo.png" alt="brand-logo" />
+          </a>
+        </div>
+        <div class="menu__body">
+          <ul class="nav-list">
+            <li class="nav__item">
+              <a type="button" class="nav__link">
+                Entertainment <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-list">
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Celebrity </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Movie </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> TV </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Music </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link"> Books </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link">
+                    Cover Stories
+                  </a>
+                </li>
+                <li>
+                  <a type="button" class="dropdown-nav__link">
+                    2023 Reading Challenge
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Fashion </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Beauty </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="" class="nav__link"> Wellness </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Family </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Video </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"> Fitness </a>
+            </li>
+          </ul>
+          <div class="famous-articles">
+            <div class="section-title">
+              <h2 class="section-title__heading">What's New Today</h2>
+            </div>
+            <ul>
+              <li>
+                <div class="article-card article-card--horizontal">
+                  <a
+                    href=""
+                    class="article__image article__image--medium article__image--circle"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </a>
+                  <div class="article__content">
+                    <a href="" class="article__tag article__tag--green">
+                      Celebrity
+                    </a>
+                    <a href="" class="article__title">
+                      Rhona Bennett Biography 2023 - Singer And Actress
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="article-card article-card--horizontal">
+                  <a
+                    href=""
+                    class="article__image article__image--medium article__image--circle"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="highlight-image"
+                    />
+                  </a>
+                  <div class="article__content">
+                    <a href="" class="article__tag article__tag--green">
+                      Celebrity
+                    </a>
+                    <a href="" class="article__title">
+                      Rhona Bennett Biography 2023 - Singer And Actress
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <h6 class="text text-md text-uppercase">Follow on Social media</h6>
+          </div>
+          <ul class="social-media-list">
+            <li>
+              <a href="" class="social-media__item facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media__item twitter">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media__item tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade modal--search"
+      id="modal__search"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="button-close" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="col-md-6 mx-auto">
+              <div class="section-title section-title--center">
+                <h2 class="section-title__heading">
+                  Press <span class="text-danger">ESC</span> to close
+                </h2>
+              </div>
+              <div class="search-wrapper">
+                <form action="">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Type to start your search"
+                  />
+                </form>
+                <button
+                  type="submit"
+                  class="button-search-icon search-icon--overlay"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <div class="search-categories">
+                <div class="section-title section-title--center">
+                  <h3 class="section-title__subheading">
+                    Or check Popular Category
+                  </h3>
+                </div>
+                <ul
+                  class="article-tabs-list article-tabs--green justify-content-center"
+                >
+                  <li>
+                    <a href="" class="article__tab"> # Fitness </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Entertainment </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Sports </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Fashion </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Video </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Family </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Nature </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Welness </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="top-header-wrapper">
+        <div class="container">
+          <div class="top-header">
+            <div class="left-column">
+              <button
+                class="menu-button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offacanvas__menu"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <button
+                class="search-button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal__search"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="center-column">
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
+            </div>
+            <div class="right-column">
+              <ul class="header-social-media-list">
+                <li>
+                  <a href="" class="social-media__item facebook--color">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item instagram--color">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item twitter--color">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item tiktok--color">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header-wrapper">
+        <div class="container">
+          <div class="bottom-header">
+            <nav>
+              <ul class="nav-list">
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Entertainment </a>
+                  <ul class="dropdown-list">
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Celebrity </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Movie </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> TV </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Music </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Books </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Cover Stories </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link">
+                        2023 Reading Challenge
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Fashion </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Beauty </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Wellness </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Family </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Video </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Fitness </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="" class="button button--green button--pill">
+              Submit Your Biography
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section--breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb-nav">
+            <li class="breadcrumb-nav__item">
+              <a href="" class="breadcrumb-nav__link"> Home </a>
+            </li>
+            <li class="breadcrumb-nav__item">
+              <a href="" class="breadcrumb-nav__link"> Categories </a>
+            </li>
+            <li class="breadcrumb-nav__item">
+              Give your fitness a boost with our new gym challenge
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--detail section--padding">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-8">
+              <div class="detail__tag">Entertainment</div>
+              <h2 class="large__title">
+                Mobile Gender Gap Increased During Pandemic, New Data Shows
+              </h2>
+              <div class="article__additional-info">
+                <div class="article__writer-info">
+                  <div class="writer__image">
+                    <img
+                      class="img-fluid"
+                      src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="writer"
+                    />
+                  </div>
+                  <p class="article__writer">
+                    By
+                    <span class="writer__name">
+                      Lal bahadur - Jan 13, 2023
+                    </span>
+                    |
+                    <span class="read-time"> 6 Minutes read </span>
+                  </p>
+                </div>
+                <div class="share-options">
+                  <p class="share__title">
+                    <!-- <i class="fa-solid fa-share me-2"></i> -->
+                    Share With :
+                  </p>
+                  <ul class="social-media-list">
+                    <li>
+                      <a href="" class="social-media__item facebook--color">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-media__item instagram--color">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-media__item twitter--color">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-media__item tiktok--color">
+                        <i class="fa-brands fa-tiktok"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="detail__image">
+                <img
+                  src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="detail image"
+                />
+                <p class="image__source">
+                  Image Source: Getty / Dominique Maitre
+                </p>
+              </div>
+              <div class="position-relative">
+                <div class="social-media-list-wrapper">
+                  <p class="text-uppercase">Share</p>
+                  <ul class="social-media-list socila-media--circle">
+                    <li>
+                      <a href="" class="social-media__item facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-media__item twitter">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-media__item tiktok">
+                        <i class="fa-brands fa-tiktok"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="editor-content-wrapper">
+                  <div class="quick-content-wrapper">
+                    <div class="quick-content__tabs">
+                      <button class="button active" data-target="quick__fact">
+                        Quick Facts
+                      </button>
+                      <button class="button" data-target="table__of__content">
+                        Table Of Content
+                      </button>
+                    </div>
+                    <div class="quick-content__info">
+                      <div class="quick-content show" id="quick__fact">
+                        <h3 class="quick-content__title">Facts About Me</h3>
+                        <ul class="quick-fact-list">
+                          <li>
+                            <span class="fact__label">Name :</span>
+                            <spa class="fact__text"> Rhona Bennet </spa>
+                          </li>
+                          <li>
+                            <span class="fact__label">FullName : </span>
+                            <spa class="fact__text"> Rhona Lynn Bennett </spa>
+                          </li>
+                          <li>
+                            <span class="fact__label">Age :</span>
+                            <spa class="fact__text"> 47 years </spa>
+                          </li>
+                          <li>
+                            <span class="fact__label">Birth Date :</span>
+                            <spa class="fact__text"> 10 May, 1976 (Today) </spa>
+                          </li>
+                          <li>
+                            <span class="fact__label">Birth Country :</span>
+                            <spa class="fact__text"
+                              >United States of America
+                            </spa>
+                          </li>
+                          <li>
+                            <span class="fact__label">Place Of Birth :</span>
+                            <spa class="fact__text"> Chicago, Illinois </spa>
+                          </li>
+                          <li>
+                            <span class="fact__label">Net Worth :</span>
+                            <spa class="fact__text"> $4 million </spa>
+                          </li>
+                          <li>
+                            <span class="fact__label">Zodiac Sign : :</span>
+                            <spa class="fact__text"> Taurus </spa>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="quick-content" id="table__of__content">
+                        <h3 class="quick-content__title">Table of Content</h3>
+                        <ul class="table-of-content-list">
+                          <li>
+                            <img src="./images/list-style.png" alt="" />
+                            Rhona Bennett's Childhood And Family
+                          </li>
+                          <li>
+                            <img src="./images/list-style.png" alt="" /> Rhona
+                            Bennett Net Worth and Career
+                          </li>
+                          <li>
+                            <ul>
+                              <li>
+                                <img src="./images/list-style.png" alt="" />
+                                Rhona's Earnings From Her Musical Career
+                              </li>
+                              <li>
+                                <img src="./images/list-style.png" alt="" />
+                                Bennett's Income From TV Series and Voiceovers
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <img src="./images/list-style.png" alt="" /> Who Is
+                            Rhona Bennett Dating?
+                          </li>
+                          <li>
+                            <img src="./images/list-style.png" alt="" />sTrivia
+                            and Facts
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="editor-content">
+                    <p>
+                      To understand the new smart watched and other pro devices
+                      of recent focus, we should look to Silicon Valley and the
+                      quantified movement of the latest generation. Apple’s
+                      Watch records exercise, tracks our moves throughout the
+                      day, assesses the amount of time we are stood up and
+                      reminds us to get up and move around if we have been sat
+                      for too long – let’s not forget Tim Cook’s “sitting is the
+                      new factor” line.
+                    </p>
+                    <h3>Detail Information</h3>
+                    <p>
+                      Diana saves Steve Trevor who has crashed on Themyscira. He
+                      warns her of the great war, World War I, raging across the
+                      globe. Wonder Woman joins him in the world of man. Diana
+                      was also joined on the show by her brother Jonathan Dior.
+                    </p>
+                    <h3>Detail Information</h3>
+                    <p>
+                      Diana saves Steve Trevor who has crashed on Themyscira. He
+                      warns her of the great war, World War I, raging across the
+                      globe. Wonder Woman joins him in the world of man. Diana
+                      was also joined on the show by her brother Jonathan Dior.
+                    </p>
+                    <div class="quote-wrapper">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <div class="ms-3">
+                        <h3 class="quote__text">
+                          So long as life remains, there is always hope and so
+                          long as there is hope, there can be victory!
+                        </h3>
+                        <p class="quote__name">- Something Name</p>
+                      </div>
+                    </div>
+                    <p>
+                      Diana saves Steve Trevor who has crashed on Themyscira. He
+                      warns her of the great war, World War I, raging across the
+                      globe. Wonder Woman joins him in the world of man. Diana
+                      was also joined on the show by her brother Jonathan Dior.
+                    </p>
+                    <div class="know-more">
+                      <h3>Know more about it</h3>
+                      <ul class="article-card-list article-card-list--bordered">
+                        <li>
+                          <div class="article-card article-card--horizontal">
+                            <a
+                              href=""
+                              class="article__image article__image--medium article__image--circle"
+                            >
+                              <img
+                                class="img-fluid"
+                                src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt="highlight-image"
+                              />
+                            </a>
+                            <div class="article__content">
+                              <a
+                                href=""
+                                class="article__tag article__tag--green"
+                              >
+                                Celebrity
+                              </a>
+                              <a href="" class="article__title">
+                                Rhona Bennett Biography 2023 - Singer And
+                                Actress
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="article-card article-card--horizontal">
+                            <a
+                              href=""
+                              class="article__image article__image--medium article__image--circle"
+                            >
+                              <img
+                                class="img-fluid"
+                                src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt="highlight-image"
+                              />
+                            </a>
+                            <div class="article__content">
+                              <a
+                                href=""
+                                class="article__tag article__tag--green"
+                              >
+                                Celebrity
+                              </a>
+                              <a href="" class="article__title">
+                                Rhona Bennett Biography 2023 - Singer And
+                                Actress
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <p>
+                      Diana saves Steve Trevor who has crashed on Themyscira. He
+                      warns her of the great war, World War I, raging across the
+                      globe. Wonder Woman joins him in the world of man. Diana
+                      was also joined on the show by her brother Jonathan Dior.
+                    </p>
+                    <table>
+                      <tr>
+                        <td>Title</td>
+                        <td>Role</td>
+                        <td>Year</td>
+                      </tr>
+                      <tr>
+                        <td>Malibu's Most Wanted</td>
+                        <td>Sister 2</td>
+                        <td>2003</td>
+                      </tr>
+                      <tr>
+                        <td>Second Time Around</td>
+                        <td>Martine</td>
+                        <td>2005</td>
+                      </tr>
+                      <tr>
+                        <td>A Cappella</td>
+                        <td>Liz</td>
+                        <td>2016</td>
+                      </tr>
+                      <tr>
+                        <td>Empire</td>
+                        <td>Rhona Bennett</td>
+                        <td>2020</td>
+                      </tr>
+                      <tr>
+                        <td>Q</td>
+                        <td>Patricia Mills</td>
+                        <td>2021</td>
+                      </tr>
+                    </table>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Excepturi totam veniam animi?
+                    </p>
+                    <h5>Breaking News!</h5>
+                    <ul>
+                      <li>
+                        Struggling to sell one multi-million dollar home
+                        currently on the market
+                      </li>
+                      <li>
+                        Struggling to sell one multi-million dollar home
+                        currently on the market
+                      </li>
+                      <li>
+                        Struggling to sell one multi-million dollar home
+                        currently on the market
+                      </li>
+                      <li>
+                        Struggling to sell one multi-million dollar home
+                        currently on the market
+                      </li>
+                      <li>
+                        <a href="">
+                          Struggling to sell one multi-million dollar home
+                          currently on the market
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="related-category">
+                <p class="text text--bold text--md me-4 mb-0">Tags:</p>
+                <ul class="article-tabs-list article-tabs--green">
+                  <li>
+                    <a href="" class="article__tab"> # Fitness </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Entertainment </a>
+                  </li>
+                  <li>
+                    <a href="" class="article__tab"> # Sports </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="nearest-articles">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="article-card article-card--horizontal">
+                      <a href="" class="article__image">
+                        <img
+                          class="img-fluid"
+                          src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                          alt=""
+                        />
+                      </a>
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          <i class="fa-solid fa-chevron-left me-2"></i> Next
+                          Article
+                        </a>
+                        <a href="" class="article__title">
+                          These Mental Health Podcasts Will Make You
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div
+                      class="article-card article-card--horizontal article-card--reversed"
+                    >
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Previous Article
+                          <i class="fa-solid fa-chevron-right ms-2"></i>
+                        </a>
+                        <a href="" class="article__title">
+                          These Mental Health Podcasts Will Make You
+                        </a>
+                      </div>
+                      <a href="" class="article__image">
+                        <img
+                          class="img-fluid"
+                          src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article-correction-content">
+                <div class="me-4">
+                  <h3 class="text text--black text--bold text--lg">
+                    See any mistake? Help Us Correct
+                  </h3>
+                  <p class="text text--black text--normal text-md mb-0">
+                    I am an Example Writer. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit,
+                  </p>
+                </div>
+                <button class="button button--green">
+                  Submit A Correction
+                </button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="aside-content">
+                <div class="newsletter-wrapper">
+                  <div class="newsletter-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <h3 class="newsletter__title">Subscribe to updates</h3>
+                  <p class="newsletter__description">
+                    Get the latest tech news from FooBar about tech, design and
+                    biz.
+                  </p>
+                  <form action="">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        name="email"
+                        class="form-control"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <button class="button button--green w-100 d-block">
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <div class="popular-articles">
+                  <div class="section-title section-title--center">
+                    <h3 class="section-title__subheading text--bold">
+                      Popular Posts
+                    </h3>
+                  </div>
+                  <ul class="article-list article-list--bordered">
+                    <li>
+                      <div class="article-card article-card--horizontal">
+                        <a
+                          href=""
+                          class="article__image article__image--medium article__image--circle"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="highlight-image"
+                          />
+                        </a>
+                        <div class="article__content">
+                          <a href="" class="article__tag article__tag--green">
+                            Celebrity
+                          </a>
+                          <a href="" class="article__title">
+                            Rhona Bennett Biography 2023 - Singer And Actress
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="article-card article-card--horizontal">
+                        <a
+                          href=""
+                          class="article__image article__image--medium article__image--circle"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="highlight-image"
+                          />
+                        </a>
+                        <div class="article__content">
+                          <a href="" class="article__tag article__tag--green">
+                            Celebrity
+                          </a>
+                          <a href="" class="article__title">
+                            Rhona Bennett Biography 2023 - Singer And Actress
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="category-list">
+                  <div class="section-title section-title--center">
+                    <h3 class="section-title__subheading text--bold">
+                      Category
+                    </h3>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="" class="category__item">
+                        <span class="category__name"> Entertainment </span>
+                        <span class="category__count"> 10 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="category__item">
+                        <span class="category__name"> Fashion </span>
+                        <span class="category__count"> 10 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="category__item">
+                        <span class="category__name"> Lifestyle </span>
+                        <span class="category__count"> 10 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="category__item">
+                        <span class="category__name"> Video </span>
+                        <span class="category__count"> 10 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="category__item">
+                        <span class="category__name"> Wellness </span>
+                        <span class="category__count"> 10 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="category__item">
+                        <span class="category__name"> Nature </span>
+                        <span class="category__count"> 10 </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="category-tags">
+                  <div class="section-title section-title--center">
+                    <h3 class="section-title__subheading text--bold">Tags</h3>
+                  </div>
+                  <ul class="article-tabs-list article-tabs--green">
+                    <li>
+                      <a href="" class="article__tab"> # Fitness </a>
+                    </li>
+                    <li>
+                      <a href="" class="article__tab"> # Nature </a>
+                    </li>
+                    <li>
+                      <a href="" class="article__tab"> # Sports </a>
+                    </li>
+                    <li>
+                      <a href="" class="article__tab"> # Lifestyle </a>
+                    </li>
+                    <li>
+                      <a href="" class="article__tab"> # Entertainment </a>
+                    </li>
+                    <li>
+                      <a href="" class="article__tab"> # Sports </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="social-media">
+                  <div class="section-title section-title--center">
+                    <h3 class="section-title__subheading text--bold">
+                      Social Media
+                    </h3>
+                  </div>
+                  <ul class="social-media-list socila-media--square">
+                    <li>
+                      <a href="" class="social-media__item facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <div class="social-media__content">
+                        <h4 class="social-media__count">11k</h4>
+                        <a href="" class="social-media__text">Subscription</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="" class="social-media__item twitter">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <div class="social-media__content">
+                        <h4 class="social-media__count">100k</h4>
+                        <a href="" class="social-media__text">Followers</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="" class="social-media__item tiktok">
+                        <i class="fa-brands fa-tiktok"></i>
+                      </a>
+                      <div class="social-media__content">
+                        <h4 class="social-media__count">2.5k</h4>
+                        <a href="" class="social-media__text">Likes</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--related section--padding">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="section-title__heading">Top Related Articles</h2>
+            <p class="section-title-description">
+              There are many variations available but the majority
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="top-footer-wrapper">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-md-4 pe-5">
+              <h3 class="text text--lg text--white text--bold mb-40px">
+                About US
+              </h3>
+              <p class="text text--white text--light">
+                To achieve this, we would like to propose a meeting with the
+                BinLearn team to discuss the project's enhancing plan. During
+                the meeting, we can review the research findings and present our
+                recommendations for improving the website's UI. We believe that
+                by implementing these changes, we can attract more users and
+                provide them with a more engaging learning environment.
+              </p>
+              <ul class="footer-contact-list">
+                <li>
+                  <h5 class="contact__item">
+                    <span class="contact-label"> Phone : </span>
+                    <span class="text-value"> +9800123456 </span>
+                  </h5>
+                </li>
+                <li>
+                  <h5 class="contact__item">
+                    <span class="contact-label"> Tel: </span>
+                    <span class="text-value"> +1-541-234-3010 </span>
+                  </h5>
+                </li>
+                <li>
+                  <h5 class="contact__item">
+                    <span class="contact-label"> Email : </span>
+                    <span class="text-value"> broadbiography@gmail.com </span>
+                  </h5>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 px-5">
+              <h3 class="text text--lg text--white text--bold mb-40px">
+                Latest Posts
+              </h3>
+              <ul class="article-list">
+                <li>
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </div>
+                    <div class="article__content">
+                      <h6 class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </h6>
+                      <h4 class="article__title article__title--white">
+                        These Mental Health Podcasts Will Make You
+                      </h4>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </div>
+                    <div class="article__content">
+                      <h6 class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </h6>
+                      <h4 class="article__title article__title--white">
+                        These Mental Health Podcasts Will Make You
+                      </h4>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="article-card article-card--horizontal">
+                    <div class="article__image">
+                      <img
+                        class="img-fluid"
+                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt=""
+                      />
+                    </div>
+                    <div class="article__content">
+                      <h6 class="article__tag article__tag--green">
+                        Beutiful Profile
+                      </h6>
+                      <h4 class="article__title article__title--white">
+                        These Mental Health Podcasts Will Make You
+                      </h4>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 ps-5">
+              <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
+              <ul class="article-tabs-list article-tabs--white">
+                <li>
+                  <a href="" class="article__tab"> # Fitness </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Entertainment </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Sports </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Fashion </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Video </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Family </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Nature </a>
+                </li>
+                <li>
+                  <a href="" class="article__tab"> # Welness </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer-wrapper">
+        <div class="container">
+          <div class="bottom-footer">
+            <p class="copyright-text">
+              @2023: all copyright reserved to topnepal
+            </p>
+            <ul class="footer-quicks-nav">
+              <li>
+                <a href="" class="nav__item"> Privacy policy </a>
+              </li>
+              <li>
+                <a href="" class="nav__item"> About us </a>
+              </li>
+              <li>
+                <a href="" class="nav__item"> 24 Support </a>
+              </li>
+              <li>
+                <a href="" class="nav__item"> Contact us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- boostrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- custom script -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>

@@ -5,6 +5,7 @@
   padding: 0 24px;
   font-size: $md-font;
   font-weight: 500;
+  flex-shrink: 0;
   &.button--green {
     background-color: $green-color;
     border: 1px solid $green-color;

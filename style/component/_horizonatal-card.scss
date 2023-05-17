@@ -21,7 +21,7 @@
   }
   .article__title {
     font-size: $md-font;
-    font-weight: $bold;
+    font-weight: 600;
     color: $black-color;
     line-height: 1.6;
     cursor: pointer;
@@ -52,7 +52,10 @@
   }
   .article__writer {
     font-size: $md-font;
-    color: $black-color;
+    color: $light-black-color;
+    .writer__name {
+      color: $black-color;
+    }
   }
   .article__content--large {
     .article__tag {
@@ -224,7 +227,6 @@
   .grid-fashion-layout {
   }
 }
-
 .article-list {
   &.article-list--bordered {
     border: 1px solid $black-25-color;

@@ -16,3 +16,16 @@ menuLink.each(function () {
     }
   });
 });
+
+// toggle quick facts and table of content
+const toggleQuickContent = $(".quick-content__tabs .button");
+const quickContent = $(".quick-content__info .quick-content");
+toggleQuickContent.each(function () {
+  $(this).click(function () {
+    const target = $(this).data("target");
+    toggleQuickContent.removeClass("active");
+    $(this).addClass("active");
+    quickContent.removeClass("show");
+    $(`#${target}`).addClass("show");
+  });
+});
