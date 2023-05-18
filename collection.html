@@ -23,6 +23,7 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="./style/main.css" />
   </head>
+
   <body>
     <div
       class="offcanvas offcanvas-start offcanvas--menu"
@@ -146,7 +147,7 @@
           <div class="text-center">
             <h6 class="text text-md text-uppercase">Follow on Social media</h6>
           </div>
-          <ul class="social-media-list">
+          <ul class="social-media-list socila-media--circle">
             <li>
               <a href="" class="social-media__item facebook">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -240,7 +241,237 @@
         </div>
       </div>
     </div>
-
+    <div
+      class="modal fade modal--filter show"
+      id="modal__filter"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="button-close" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="fitler-content">
+              <h3 class="text text--lg text--bold text--black">Filter Data</h3>
+              <select
+                name="select-option"
+                id=""
+                class="form-control form-select mw-256px"
+              >
+                <option value="">Select Country</option>
+                <option value="">Nepal</option>
+                <option value="">America</option>
+                <option value="">India</option>
+              </select>
+              <div class="checklist">
+                <h4 class="checklist__title">Sub Categories</h4>
+                <ul class="check-input-list">
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                        checked
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        All Categories
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Wrestlers
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Tennis Players
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Soccer Players
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Skateboarders
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Race Car Drivers
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Baseball Players
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        NFL Players
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        NBA Players
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        MMA
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        UFC Fighters
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Hocky
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Golfers
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Coaches
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="sub-category"
+                        class="form-check-input"
+                        id="sub-category-1"
+                      />
+                      <label for="sub-category-1" class="label label--light">
+                        Boxers
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
       <div class="top-header-wrapper">
         <div class="container">
@@ -253,6 +484,13 @@
               >
                 <i class="fa-solid fa-bars"></i>
               </button>
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
               <button
                 class="search-button"
                 data-bs-toggle="modal"
@@ -375,9 +613,12 @@
       <section class="section section--collection section--padding">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-8">
+            <div class="col-md-8">
               <div class="select-wrapper">
-                <div class="select__title">Showing <span>20</span> Results</div>
+                <div class="select__title">
+                  <span class="d-none d-md-inline">Showing</span>
+                  <span>20</span> Results
+                </div>
                 <select
                   name="select-option"
                   id=""
@@ -388,6 +629,16 @@
                   <option value="">America</option>
                   <option value="">India</option>
                 </select>
+                <!-- <a href="" class="text-link text-link--green">
+                   FILTER <i class="fa-solid fa-arrow-up-wide-short ms-2"></i>
+                </a> -->
+                <button
+                  class="button--outline button--green button--pill"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal__filter"
+                >
+                  FILTER <i class="fa-solid fa-arrow-up-wide-short ms-2"></i>
+                </button>
               </div>
               <ul class="article-list article-list--bordered border-0">
                 <li>
@@ -395,7 +646,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/5977860/pexels-photo-5977860.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -420,7 +671,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/1396538/pexels-photo-1396538.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -445,7 +696,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/2750890/pexels-photo-2750890.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -470,7 +721,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/5903191/pexels-photo-5903191.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -495,7 +746,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/3483786/pexels-photo-3483786.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -532,19 +783,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-3">
-              <!-- <div class="select-wrapper">
-                <select
-                  name="select-option"
-                  id=""
-                  class="form-control form-select mw-256px"
-                >
-                  <option value="">Select Country</option>
-                  <option value="">Nepal</option>
-                  <option value="">America</option>
-                  <option value="">India</option>
-                </select>
-              </div> -->
+            <div class="col-3 d-none d-md-block">
               <div class="checklist">
                 <h4 class="checklist__title">Sub Categories</h4>
                 <ul class="check-input-list">
@@ -754,8 +993,8 @@
     <footer>
       <div class="top-footer-wrapper">
         <div class="container">
-          <div class="row gx-5">
-            <div class="col-md-4 pe-5">
+          <div class="row gx-md-5">
+            <div class="col-md-4 pe-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 About US
               </h3>
@@ -788,7 +1027,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 px-5">
+            <div class="col-md-4 px-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 Latest Posts
               </h3>
@@ -852,7 +1091,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 ps-5">
+            <div class="col-md-4 ps-md-5">
               <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
               <ul class="article-tabs-list article-tabs--white">
                 <li>
@@ -888,7 +1127,7 @@
         <div class="container">
           <div class="bottom-footer">
             <p class="copyright-text">
-              @2023: all copyright reserved to topnepal
+              @2023: all copyright reserved to broadbiography
             </p>
             <ul class="footer-quicks-nav">
               <li>

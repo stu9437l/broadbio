@@ -1,0 +1,401 @@
+$mobile: 500px;
+.left-column {
+  .brand-logo {
+    display: none;
+    img {
+      width: 200px;
+    }
+  }
+}
+@media (max-width: $mobile) {
+  // varibles
+  $xl-font: 2rem !important;
+  .mob-mb-0 {
+    margin-bottom: 0 !important;
+  }
+  .mob-pb-0 {
+    padding-bottom: 0 !important;
+  }
+  // components
+  .mob-listing-2 {
+    li {
+      &:nth-child(n + 3) {
+        display: none;
+      }
+    }
+  }
+  .article-list.article-list--bordered {
+    margin-bottom: 24px;
+  }
+
+  //custom select
+  .select-wrapper {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      display: flex;
+    }
+    .select__title {
+      font-size: $lg-font;
+      font-weight: $bold;
+    }
+    .mw-256px {
+      display: none;
+      max-width: 256px;
+    }
+  }
+  .article-card---must-read {
+    .slick-arrow {
+      top: 200px;
+      &.slick-next {
+        right: calc(50% - 47.5px);
+        background-color: $black-color;
+      }
+      &.slick-prev {
+        left: calc(50% - 47.5px);
+      }
+    }
+  }
+  .grid-fashion-layout {
+    display: block;
+    .article-card {
+      height: 256px;
+      width: 100%;
+      border-right: 1px solid white;
+    }
+  }
+  .checklist {
+    .checklist__title {
+      color: $black-color;
+      font-size: 20px;
+    }
+  }
+
+  //   layouts responsive
+  // headers
+  header {
+    .top-header {
+      justify-content: flex-start;
+      align-items: center;
+      .center-column,
+      .right-column {
+        width: auto;
+      }
+      .left-column {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .brand-logo {
+          display: block;
+        }
+        .search-button {
+          margin-left: 0;
+          width: 50px;
+        }
+        .menu-button {
+          width: 48px;
+        }
+      }
+      .right-column,
+      .center-column {
+        display: none;
+      }
+    }
+    .bottom-header-wrapper {
+      display: none;
+    }
+  }
+
+  footer .bottom-footer-wrapper .bottom-footer {
+    flex-direction: column;
+    justify-content: center;
+    .copyright-text {
+      font-size: 18px;
+      text-align: center;
+    }
+    .footer-quicks-nav {
+      display: none;
+    }
+  }
+  //   popup modal
+  .modal {
+    .modal-dialog {
+      width: 100%;
+    }
+    &.modal--search {
+      .modal-content {
+        padding: 24px;
+        .modal-body {
+          .search-wrapper {
+            margin-bottom: 60px;
+            position: relative;
+            .form-control-lg {
+              padding-right: 64px;
+            }
+            .button-search-icon {
+              &.search-icon--overlay {
+                right: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   menu offcanvas
+  .offcanvas {
+    &.offcanvas--menu {
+      .menu__header {
+        .brand-logo {
+          img {
+            width: 240px;
+          }
+        }
+      }
+    }
+  }
+
+  .section--main-1 {
+    .section-title {
+      width: 100%;
+      text-align: center !important;
+      .section-title__heading {
+      }
+      &.section-title--overlay {
+        &::after {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .section-title {
+    &.section-title--responsive {
+      text-align: center;
+    }
+    .section-title__heading {
+      margin-bottom: 0px;
+    }
+    .section-title__description {
+      font-size: 20px;
+      display: none;
+    }
+  }
+  .col-md-3 {
+    .article-card {
+      margin-bottom: 0;
+    }
+  }
+
+  .section {
+    &.section--padding {
+      padding: 40px 0;
+    }
+  }
+  //   .article-card {
+  //     margin-bottom: 40px;
+  //   }
+  .article-card {
+    .article__tag {
+      font-size: $md-font;
+      font-weight: $semi-bold;
+      margin-bottom: 8px;
+      &.article__tag--pill {
+        padding: 2px 16px;
+        border-radius: 20px;
+        &.article__tab--green {
+          background-color: $green-color;
+          color: white;
+        }
+      }
+      &.article__tab--light-green {
+        background-color: #e7fffe;
+        color: $green-color;
+      }
+      &.article__tag--green {
+        color: $green-color !important;
+      }
+    }
+    .article__title {
+      font-size: 22px;
+      font-weight: 600;
+      color: $black-color;
+      line-height: 1.4;
+      cursor: pointer;
+
+      &:hover {
+        color: $green-color;
+      }
+      &.article__title--white {
+        color: $white-color !important;
+      }
+    }
+    .article__image {
+      margin-bottom: 16px;
+      display: block;
+      position: relative;
+      flex-shrink: 0;
+      &.article__image--large {
+        height: 256px;
+      }
+      img {
+        transition: $transition;
+      }
+    }
+    .article__writer {
+      font-size: $md-font;
+      color: $light-black-color;
+      .writer__name {
+        color: $black-color;
+      }
+      &.aricle__writer--white {
+        font-weight: 300;
+
+        .writer__name {
+          color: white;
+        }
+      }
+    }
+    .article__content--large {
+      .article__tag {
+        margin-bottom: 20px;
+      }
+      .article__title {
+        font-size: $lg-font;
+        margin-bottom: 20px;
+      }
+    }
+    .article__count {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: $black-color;
+      font-size: $md-font;
+      font-weight: $semi-bold;
+      color: $white-color;
+      border: 4px solid white;
+      &.article__count--overlay {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+      }
+    }
+    &.article-card---must-read {
+      .article__content {
+        background-color: $light-white-color;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .article__image {
+        height: 256px;
+      }
+    }
+    &.article-card--birthday {
+      .article__image {
+        height: 256px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: $lg-border-radius;
+      }
+      .article__tag--pill {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        &.active {
+          background-image: linear-gradient(
+            62deg,
+            #fbab7e 0%,
+            #f7ce68 100%
+          ) !important;
+        }
+      }
+    }
+    &.article-card--center {
+      .article--image {
+        height: 256px;
+      }
+      text-align: center;
+      .article__tag--pill {
+        position: absolute;
+        bottom: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .article__content {
+        padding-top: 16px;
+      }
+    }
+    &.article-card--horizontal {
+      margin-bottom: 20px;
+      display: flex;
+      a {
+        display: block;
+      }
+      .article__image {
+        &.article__image--circle {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          overflow: hidden;
+          &.article__image--medium {
+            height: 80px;
+            width: 80px;
+          }
+        }
+      }
+      .article__content {
+        margin-left: 20px;
+      }
+
+      &.article-card--reversed {
+        text-align: right;
+        .article__content {
+          margin: 0 20px 0 0 !important;
+        }
+      }
+    }
+    &.article-card--overlay {
+      .article__image {
+        height: 256px;
+      }
+      .article__content {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        bottom: 0;
+        padding: 12px;
+        z-index: 2;
+      }
+      &.article-card--xl {
+        .article__image {
+          height: 600px;
+        }
+      }
+    }
+    &.article-card--editor-pick {
+      margin-bottom: 40px;
+      .article__image {
+        height: 180px;
+        margin-bottom: 0;
+      }
+      .article__content {
+        padding: 12px;
+        background-color: white;
+      }
+    }
+    .grid-fashion-layout {
+    }
+  }
+}

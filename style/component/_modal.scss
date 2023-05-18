@@ -1,0 +1,139 @@
+//close button
+.button-close {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: $box-shadow;
+  border: 0;
+  font-size: 20px;
+  color: red;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+// menu offcanvas
+.offcanvas {
+  .offcanvas-body {
+    padding: 32px;
+  }
+  &.offcanvas--menu {
+    .menu__header {
+      position: relative;
+      margin-bottom: 40px;
+      .brand-logo {
+        // display: block;
+        // text-align: center;
+        img {
+          width: 240px;
+        }
+      }
+    }
+    .menu__body {
+      .nav-list {
+        margin-bottom: 40px;
+        .nav__item {
+          border-bottom: 1px solid $black-25-color;
+          .nav__link {
+            font-size: 20px;
+            font-weight: $semi-bold;
+            color: $black-color;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i {
+              font-size: $md-font;
+              color: $black-color;
+            }
+          }
+          .dropdown-list {
+            display: none;
+            .dropdown-nav__link {
+              font-size: $md-font;
+              font-weight: $regular;
+              display: inline-block;
+              color: $black-color;
+              padding: 5px 0;
+              transition: $transition;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 12px;
+                background-color: $green-color;
+                left: -16px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: none;
+              }
+              &:hover {
+                transform: translateX(20px);
+                color: $green-color;
+                &::after {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+      .famous-articles {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+// search form modal
+
+.modal {
+  &.modal--search {
+    .modal-content {
+      padding: 32px;
+      .modal-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .search-wrapper {
+          margin-bottom: 80px;
+          position: relative;
+          .form-control-lg {
+            padding-right: 64px;
+          }
+          .button-search-icon {
+            background-color: transparent;
+            border: 0;
+            font-size: $lg-font;
+            color: $green-color;
+            &.search-icon--overlay {
+              position: absolute;
+              right: 32px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//filter form modal
+
+.modal--filter {
+  .modal-content {
+    padding: 24px;
+    .modal-body {
+      .form-select {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

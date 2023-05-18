@@ -29,3 +29,49 @@ toggleQuickContent.each(function () {
     $(`#${target}`).addClass("show");
   });
 });
+
+// slick slider
+
+$(".article-card---must-read").slick({
+  dots: false,
+  infinite: false,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerPadding: "24px",
+});
+
+// media query in js
+function checkMobileScreen() {
+  if ($(window).width() <= 768) {
+    $(".mob-slider-with-dots--single").slick({
+      dots: true,
+      infinite: false,
+      slidesToShow: 1.5,
+      slidesToScroll: 1,
+      centerPadding: "24px",
+    });
+    $(".mob-slider-with-arrow--single").slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 1.5,
+      slidesToScroll: 1,
+      arrows: true,
+      centerPadding: "24px",
+    });
+    $(".mob-slider--single").slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 1.5,
+      slidesToScroll: 1,
+      centerPadding: "24px",
+    });
+    $(".mob-slider").addClass("mob-slider--gap");
+  } else {
+    $(".mob-slider").removeClass("mob-slider--gap");
+  }
+}
+
+// Call the function when the page loads and on window resize
+$(window).on("load", checkMobileScreen);
+$(window).on("resize", checkMobileScreen);

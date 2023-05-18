@@ -20,6 +20,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- slick slider css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- custom css link -->
     <link rel="stylesheet" href="./style/main.css" />
   </head>
@@ -252,6 +268,13 @@
               >
                 <i class="fa-solid fa-bars"></i>
               </button>
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
               <button
                 class="search-button"
                 data-bs-toggle="modal"
@@ -358,31 +381,35 @@
       </div>
     </header>
     <main class="main">
-      <section
-        class="section section--birthday section--padding section--light"
-      >
+      <section class="section section--main-1 section--padding section--light">
         <div class="container">
-          <!-- <div class="section-title section-title--center">
-            <h2 class="section-title__heading">Must Read</h2>
-            <p class="section-title-description">
-              There are many variations available but the majority
-            </p>
-          </div> -->
           <div
             class="section-title section-title--overlay section-title--birthday"
           >
-            <h2 class="section-title__heading">
-              <span class="text--pink"> Birthday </span>
-              Special
-            </h2>
+            <div
+              class="d-flex align-items-center justify-content-center justify-content-md-between"
+            >
+              <h2 class="section-title__heading mb-0">
+                <span class="text--pink"> Birthday </span>
+                Special
+              </h2>
+              <a
+                href=""
+                class="d-none d-md-flex button--outline button--green button--pill"
+              >
+                View All <i class="fa-solid fa-chevron-right ms-2"></i>
+              </a>
+            </div>
           </div>
-          <div class="row">
+          <div
+            class="row mob-slider mob-slider-with-dots--single slick-dots--circle"
+          >
             <div class="col-md-3">
               <div class="article-card article-card--birthday">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/3419695/pexels-photo-3419695.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="birthday-image"
                   />
                   <div
@@ -406,31 +433,7 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt="birthday-image"
-                  />
-                  <div
-                    class="article__tag article__tag--pill article__tab--green"
-                  >
-                    Happy Birthday
-                  </div>
-                </a>
-                <div class="article__content">
-                  <a href="" class="article__tag article__tag--green"
-                    >Celebrity</a
-                  >
-                  <a href="" class="article__title">
-                    Rhona Bennett Biography 2023 - Singer And Actress
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="article-card article-card--birthday">
-                <a href="" class="article__image">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/6030045/pexels-photo-6030045.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="birthday-image"
                   />
                   <div
@@ -454,7 +457,31 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/2425733/pexels-photo-2425733.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="birthday-image"
+                  />
+                  <div
+                    class="article__tag article__tag--pill article__tab--green"
+                  >
+                    1 day After
+                  </div>
+                </a>
+                <div class="article__content">
+                  <a href="" class="article__tag article__tag--green"
+                    >Celebrity</a
+                  >
+                  <a href="" class="article__title">
+                    Rhona Bennett Biography 2023 - Singer And Actress
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--birthday">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/5267760/pexels-photo-5267760.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="birthday-image"
                   />
                   <div
@@ -474,17 +501,22 @@
               </div>
             </div>
           </div>
+          <div class="d-flex d-md-none justify-content-center mt-5">
+            <a href="" class="text-link text-link--green">
+              View All <i class="fa-solid fa-chevron-right ms-2"></i>
+            </a>
+          </div>
         </div>
       </section>
-      <section class="section section--main section--padding">
+      <section class="section section--main-2 section--padding">
         <div class="container">
-          <div class="row">
+          <div class="row mob-slider mob-slider--single">
             <div class="col-md-3">
               <div class="article-card article-card--center">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/12244376/pexels-photo-12244376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/9157729/pexels-photo-9157729.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="main-article"
                   />
                   <div
@@ -526,7 +558,7 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/12244376/pexels-photo-12244376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/10713529/pexels-photo-10713529.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="main-article"
                   />
                   <div
@@ -547,7 +579,7 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/12244376/pexels-photo-12244376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/10786135/pexels-photo-10786135.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="main-article"
                   />
                   <div
@@ -566,9 +598,7 @@
           </div>
         </div>
       </section>
-      <section
-        class="section section--highlight section--padding section--light"
-      >
+      <section class="section section--main-3 section--padding section--light">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -577,7 +607,7 @@
                   <div class="article__image article__image--circle">
                     <img
                       class="img-fluid"
-                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      src="https://images.pexels.com/photos/3934616/pexels-photo-3934616.jpeg?auto=compress&cs=tinysrgb&w=1600"
                       alt="highlight-image"
                     />
                   </div>
@@ -600,11 +630,11 @@
                   <div class="article__image article__image--circle">
                     <img
                       class="img-fluid"
-                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      src="https://images.pexels.com/photos/4242520/pexels-photo-4242520.jpeg?auto=compress&cs=tinysrgb&w=1600"
                       alt="highlight-image"
                     />
                   </div>
-                  <div class="article__count article__count--overlay">1</div>
+                  <div class="article__count article__count--overlay">2</div>
                 </div>
 
                 <div class="article__content">
@@ -623,11 +653,11 @@
                   <div class="article__image article__image--circle">
                     <img
                       class="img-fluid"
-                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      src="https://images.pexels.com/photos/2947337/pexels-photo-2947337.jpeg?auto=compress&cs=tinysrgb&w=1600"
                       alt="highlight-image"
                     />
                   </div>
-                  <div class="article__count article__count--overlay">1</div>
+                  <div class="article__count article__count--overlay">3</div>
                 </div>
 
                 <div class="article__content">
@@ -646,11 +676,11 @@
                   <div class="article__image article__image--circle">
                     <img
                       class="img-fluid"
-                      src="https://images.pexels.com/photos/2587211/pexels-photo-2587211.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      src="https://images.pexels.com/photos/3449090/pexels-photo-3449090.jpeg?auto=compress&cs=tinysrgb&w=1600"
                       alt="highlight-image"
                     />
                   </div>
-                  <div class="article__count article__count--overlay">1</div>
+                  <div class="article__count article__count--overlay">4</div>
                 </div>
 
                 <div class="article__content">
@@ -666,58 +696,95 @@
           </div>
         </div>
       </section>
-      <section class="section section--must-read section--padding">
+      <section class="section section--main-4 section--padding mob-pb-0">
         <div class="container">
           <div class="section-title section-title--center">
             <h2 class="section-title__heading">Must Read</h2>
-            <p class="section-title-description">
+            <p class="section-title__description">
               There are many variations available but the majority
             </p>
           </div>
-          <div class="article-card article-card---must-read">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div
-                  class="article__content text-center article__content--large"
-                >
-                  <a
-                    class="article__tag article__tag--pill article__tab--green"
+          <div class="article-card article-card---must-read mob-mb-0">
+            <div class="slider-item">
+              <div class="row g-0">
+                <div class="col-md-6 order-last order-md-first">
+                  <div
+                    class="article__content text-center article__content--large"
                   >
-                    FriendShip
-                  </a>
-                  <a href="" class="article__title">
-                    Joel Kim Booster On His First Asian Friend And An
-                    "Invaluable" Fight With Bowen Yang
-                  </a>
-                  <p class="article__writer">
-                    By
-                    <span class="writer__name"> Lal Bahadur BC </span> - Jan 13,
-                    2023
-                  </p>
+                    <a
+                      class="article__tag article__tag--pill article__tab--green"
+                    >
+                      FriendShip
+                    </a>
+                    <a href="" class="article__title">
+                      Joel Kim Booster On His First Asian Friend And An
+                      "Invaluable" Fight With Bowen Yang
+                    </a>
+                    <p class="article__writer">
+                      By
+                      <span class="writer__name"> Lal Bahadur BC </span> - Jan
+                      13, 2023
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="article__image">
+                    <img
+                      src="https://images.pexels.com/photos/1860074/pexels-photo-1860074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="article-image"
+                      class="img-fluid"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="article__image">
-                  <img
-                    src="https://images.pexels.com/photos/1860074/pexels-photo-1860074.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt="article-image"
-                    class="img-fluid"
-                  />
+            </div>
+            <div class="slider-item">
+              <div class="row g-0">
+                <div class="col-md-6 order-last order-md-first">
+                  <div
+                    class="article__content text-center article__content--large"
+                  >
+                    <a
+                      class="article__tag article__tag--pill article__tab--green"
+                    >
+                      FriendShip
+                    </a>
+                    <a href="" class="article__title">
+                      Joel Kim Booster On His First Asian Friend And An
+                      "Invaluable" Fight With Bowen Yang
+                    </a>
+                    <p class="article__writer">
+                      By
+                      <span class="writer__name"> Lal Bahadur BC </span> - Jan
+                      13, 2023
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="article__image">
+                    <img
+                      src="https://images.pexels.com/photos/1860074/pexels-photo-1860074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                      alt="article-image"
+                      class="img-fluid"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section section--you-know section--padding">
+      <section class="section section--main-5 section--padding">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title section-title--responsive">
             <h2 class="section-title__heading">Now you know</h2>
-            <p class="section-title-description">
+            <p class="section-title__description">
               There are many variations available but the majority
             </p>
           </div>
-          <div class="row g-0">
+          <div
+            class="row mob-slider mob-slider-with-arrow--single slick-arrows--bottom"
+          >
             <div class="col-md-3">
               <div class="article-card article-card--overlay">
                 <a href="" class="article__image">
@@ -805,17 +872,19 @@
           </div>
         </div>
       </section>
-      <section class="section section--fitness section--padding">
+      <section class="section section--main-6 section--padding">
         <div class="container">
-          <div class="section-title section-title--center">
+          <div
+            class="section-title section-title--center section-title--responsive"
+          >
             <h2 class="section-title__heading">Fitness</h2>
-            <p class="section-title-description">
+            <p class="section-title__description">
               There are many variations available but the majority
             </p>
           </div>
           <div class="row">
             <div class="col-md-3">
-              <ul>
+              <ul class="mob-listing-2">
                 <li>
                   <div class="article-card article-card--horizontal">
                     <a href="" class="article__image">
@@ -840,7 +909,7 @@
                     <a href="" class="article__image">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/1886487/pexels-photo-1886487.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -859,7 +928,7 @@
                     <a href="" class="article__image">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/416809/pexels-photo-416809.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -878,7 +947,7 @@
                     <a href="" class="article__image">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -898,7 +967,7 @@
               <div class="article-card">
                 <div class="article__image article__image--large">
                   <img
-                    src="https://images.pexels.com/photos/1860074/pexels-photo-1860074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/4753928/pexels-photo-4753928.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="article-image"
                     class="img-fluid"
                   />
@@ -924,7 +993,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <ul>
+              <ul class="mob-listing-2">
                 <li>
                   <div
                     class="article-card article-card--horizontal article-card--reversed"
@@ -940,7 +1009,7 @@
                     <a href="" class="article__image">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/7289296/pexels-photo-7289296.jpeg?auto=compress&cs=tinysrgb&w=16000"
                         alt=""
                       />
                     </a>
@@ -961,7 +1030,7 @@
                     <a href="" class="article__image">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -982,7 +1051,7 @@
                     <a href="" class="article__image">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/317155/pexels-photo-317155.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -1003,7 +1072,7 @@
                     <a href="" class="article__image">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/2468339/pexels-photo-2468339.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -1014,23 +1083,21 @@
           </div>
         </div>
       </section>
-      <section
-        class="section section--editor-pick section--padding section--light"
-      >
+      <section class="section section--main-7 section--padding section--light">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title section-title--responsive">
             <h2 class="section-title__heading">Editors’ Picks</h2>
-            <p class="section-title-description">
+            <p class="section-title__description">
               There are many variations available but the majority
             </p>
           </div>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/10839163/pexels-photo-10839163.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1044,12 +1111,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/3058391/pexels-photo-3058391.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1063,12 +1130,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/11680268/pexels-photo-11680268.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1082,12 +1149,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/7828243/pexels-photo-7828243.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1101,12 +1168,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/9000477/pexels-photo-9000477.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1120,12 +1187,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/7163732/pexels-photo-7163732.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1139,12 +1206,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/11919832/pexels-photo-11919832.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1158,12 +1225,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/11585053/pexels-photo-11585053.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1180,49 +1247,96 @@
           </div>
         </div>
       </section>
-      <section class="section section--fashion section--padding">
+      <section class="section section--main-8 section--padding">
         <div class="container">
           <div class="section-title section-title--center">
             <h2 class="section-title__heading">PicksFashion & Beauty</h2>
-            <p class="section-title-description">
+            <p class="section-title__description">
               There are many variations available but the majority
             </p>
           </div>
-          <div class="grid-fashion-layout">
-            <div class="article-card article-card-1"></div>
-            <div class="article-card article-card-1"></div>
-            <div class="article-card article-card-1"></div>
-            <div class="article-card article-card-1"></div>
-            <!-- <div class="row"> -->
-            <div class="col-md-6">
-              <div class="article-card article-card--overlay article-card--xl">
-                <a href="" class="article__image">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/4906284/pexels-photo-4906284.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt="overlay-image"
-                  />
-
-                  <div class="article__content">
-                    <div class="article__tag article__tag--green">
-                      Colurfull
-                    </div>
-                    <div class="article__title article__title--white">
-                      Kevin Costner's Filming Schedule Reportedly Led to
-                      Christine
-                    </div>
-                  </div>
-                </a>
+          <div class="grid-fashion-layout mob-slider mob-slider--single">
+            <a href="" class="article-card article-card-1">
+              <img
+                class="img-fluid"
+                src="https://images.pexels.com/photos/2043590/pexels-photo-2043590.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+              <div class="article__content">
+                <p class="article__tag article__tag--green">Beutiful Profile</p>
+                <h3 class="article__title article__title--white">
+                  These Mental Health Podcasts Will Make You
+                </h3>
+                <p class="article__writer aricle__writer--white">
+                  By
+                  <span class="writer__name"> Lal Bahadur BC </span>
+                </p>
               </div>
-            </div>
+            </a>
+            <a href="" class="article-card article-card-2">
+              <img
+                class="img-fluid"
+                src="https://images.pexels.com/photos/1381556/pexels-photo-1381556.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+              <div class="article__content">
+                <p class="article__tag article__tag--green">Beutiful Profile</p>
+                <h3 class="article__title article__title--white">
+                  These Mental Health Podcasts Will Make You
+                </h3>
+                <p class="article__writer aricle__writer--white">
+                  By
+                  <span class="writer__name"> Lal Bahadur BC </span>
+                </p>
+              </div>
+            </a>
+            <a href="" class="article-card article-card-3">
+              <img
+                class="img-fluid"
+                src="https://images.pexels.com/photos/1375736/pexels-photo-1375736.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+              <div class="article__content">
+                <p class="article__tag article__tag--green">Beutiful Profile</p>
+                <h3 class="article__title article__title--white">
+                  These Mental Health Podcasts Will Make You
+                </h3>
+                <p class="article__writer aricle__writer--white">
+                  By
+                  <span class="writer__name"> Lal Bahadur BC </span>
+                </p>
+              </div>
+            </a>
+            <a class="article-card article-card-4">
+              <img
+                class="img-fluid"
+                src="https://images.pexels.com/photos/3620411/pexels-photo-3620411.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt=""
+              />
+              <div class="article__content">
+                <p class="article__tag article__tag--green">Beutiful Profile</p>
+                <h3 class="article__title article__title--white">
+                  These Mental Health Podcasts Will Make You
+                </h3>
+                <p class="article__writer aricle__writer--white">
+                  By
+                  <span class="writer__name"> Lal Bahadur BC </span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="d-flex d-sm-none justify-content-center mt-5">
+            <a href="" class="button--outline button--pill button--green">
+              View All <i class="fa-solid fa-chevron-right ms-2"></i>
+            </a>
           </div>
         </div>
       </section>
-      <section class="section section--living section--padding section--light">
+      <section class="section section--main-9 section--padding section--light">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title section-title--responsive">
             <h2 class="section-title__heading">Living</h2>
-            <p class="section-title-description">
+            <p class="section-title__description">
               There are many variations available but the majority
             </p>
           </div>
@@ -1242,7 +1356,7 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1263,7 +1377,7 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/276510/pexels-photo-276510.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1284,7 +1398,7 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/709143/pexels-photo-709143.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1305,7 +1419,7 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/2440471/pexels-photo-2440471.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1326,7 +1440,7 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/945688/pexels-photo-945688.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
@@ -1347,12 +1461,17 @@
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/12065668/pexels-photo-12065668.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
               </div>
             </div>
+          </div>
+          <div class="d-flex d-md-none justify-content-center mt-5">
+            <a href="" class="text-link text-link--green">
+              View All <i class="fa-solid fa-chevron-right ms-2"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -1360,7 +1479,7 @@
         <div class="container">
           <div class="section-title section-title--center">
             <h2 class="section-title__heading">Celebrity</h2>
-            <p class="section-title-description">
+            <p class="section-title__description">
               There are many variations available but the majority
             </p>
           </div>
@@ -1372,7 +1491,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/2332376/pexels-photo-2332376.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -1392,7 +1511,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -1412,7 +1531,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/3791983/pexels-photo-3791983.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -1432,7 +1551,7 @@
                     <a href="" class="article__image article__image--large">
                       <img
                         class="img-fluid"
-                        src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        src="https://images.pexels.com/photos/2250276/pexels-photo-2250276.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         alt=""
                       />
                     </a>
@@ -1453,7 +1572,7 @@
               <div class="article-card">
                 <div class="article__image article__image--large">
                   <img
-                    src="https://images.pexels.com/photos/1860074/pexels-photo-1860074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/7319479/pexels-photo-7319479.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="article-image"
                     class="img-fluid"
                   />
@@ -1483,7 +1602,9 @@
       </section>
       <section class="section section--main-11 section--padding">
         <div class="container">
-          <div class="row">
+          <div
+            class="row mob-slider mob-slider-with-dots--single slick-dots--circle"
+          >
             <div class="col-md-4">
               <div class="section-title section-title--center">
                 <h2 class="section-title__heading">Lifestyle</h2>
@@ -1492,7 +1613,143 @@
                 <a href="" class="article__image mb-0">
                   <img
                     class="img-fluid"
+                    src="https://images.pexels.com/photos/10568844/pexels-photo-10568844.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="overlay-image"
+                  />
+
+                  <div class="article__content">
+                    <div class="article__tag article__tag--green">
+                      Colurfull
+                    </div>
+                    <div class="article__title article__title--white">
+                      Kevin Costner's Filming Schedule Reportedly Led to
+                      Christine
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <ul class="article-list article-list--bordered">
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="section-title section-title--center">
+                <h2 class="section-title__heading">Nature</h2>
+              </div>
+              <div class="article-card article-card--overlay">
+                <a href="" class="article__image mb-0">
+                  <img
+                    class="img-fluid"
                     src="https://images.pexels.com/photos/4906284/pexels-photo-4906284.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="overlay-image"
+                  />
+
+                  <div class="article__content">
+                    <div class="article__tag article__tag--green">
+                      Colurfull
+                    </div>
+                    <div class="article__title article__title--white">
+                      Kevin Costner's Filming Schedule Reportedly Led to
+                      Christine
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <ul class="article-list article-list--bordered">
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-list__item">
+                    <div class="article-card">
+                      <div class="article__content">
+                        <a href="" class="article__tag article__tag--green">
+                          Lifestyle
+                        </a>
+                        <a href="" class="article__title">
+                          Give your fitness a boost with our new gym challenge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="section-title section-title--center">
+                <h2 class="section-title__heading">Diversity</h2>
+              </div>
+              <div class="article-card article-card--overlay">
+                <a href="" class="article__image mb-0">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/8058970/pexels-photo-8058970.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="overlay-image"
                   />
 
@@ -1559,8 +1816,8 @@
     <footer>
       <div class="top-footer-wrapper">
         <div class="container">
-          <div class="row gx-5">
-            <div class="col-md-4 pe-5">
+          <div class="row gx-md-5">
+            <div class="col-md-4 pe-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 About US
               </h3>
@@ -1593,7 +1850,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 px-5">
+            <div class="col-md-4 px-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 Latest Posts
               </h3>
@@ -1657,7 +1914,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 ps-5">
+            <div class="col-md-4 ps-md-5">
               <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
               <ul class="article-tabs-list article-tabs--white">
                 <li>
@@ -1693,7 +1950,7 @@
         <div class="container">
           <div class="bottom-footer">
             <p class="copyright-text">
-              @2023: all copyright reserved to topnepal
+              @2023: all copyright reserved to broadbiography
             </p>
             <ul class="footer-quicks-nav">
               <li>
@@ -1728,6 +1985,13 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- slick slider js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- custom script -->
     <script src="./script/script.js"></script>
   </body>

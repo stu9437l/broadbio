@@ -1,0 +1,94 @@
+.mob-slider--gap {
+  .col-md-3,
+  .col-md-4 {
+    padding: 0 12px;
+  }
+}
+.slick-dots--circle {
+  li {
+    height: auto;
+    width: auto;
+    button {
+      height: 12px;
+      width: 12px;
+      background-color: $black-25-color;
+      border-radius: 50%;
+    }
+    &.slick-active {
+      button {
+        width: 32px;
+        border-radius: 12px !important;
+        background-color: $green-color;
+      }
+    }
+    button:before {
+      display: none;
+    }
+  }
+}
+.slick-arrows--bottom {
+  .slick-arrow {
+    top: calc(100% + 24px);
+    &.slick-next {
+      right: calc(50% - 56px);
+      height: 48px;
+      width: 48px;
+      &::before {
+        content: "\f178";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 32px;
+        color: $green-color;
+      }
+    }
+    &.slick-prev {
+      left: calc(50% - 56px);
+      height: 32px;
+      width: 48px;
+      z-index: 1;
+
+      &::before {
+        content: "\f177";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 32px;
+        color: $green-color;
+      }
+    }
+  }
+}
+
+.article-card---must-read {
+  .slick-arrow {
+    top: 80%;
+    &.slick-next {
+      height: 48px;
+      width: 48px;
+      background-color: $black-color;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      right: 48px;
+      &::before {
+        content: "\f054";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 24px;
+      }
+    }
+    &.slick-prev {
+      left: calc(100% - 144px);
+      height: 48px;
+      width: 48px;
+      z-index: 1;
+      background-color: $green-color;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      &::before {
+        content: "\f053";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 24px;
+      }
+    }
+  }
+}

@@ -20,3 +20,40 @@
     font-weight: $semi-bold;
   }
 }
+.button--outline {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  font-size: $md-font;
+  font-weight: 500;
+  flex-shrink: 0;
+  &.button--green {
+    background-color: white;
+    border: 1px solid $green-color;
+    color: $green-color;
+  }
+  &.button--pill {
+    border-radius: 25px;
+  }
+  &.button--lg {
+    height: 64px;
+    font-size: $lg-font;
+    font-weight: $semi-bold;
+  }
+}
+
+.text-link {
+  font-size: $md-font;
+  font-weight: $bold;
+  display: block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: $black-color;
+  i {
+    margin-left: 8px;
+  }
+  &.text-link--green {
+    color: $green-color;
+  }
+}
