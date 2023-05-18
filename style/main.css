@@ -79,6 +79,14 @@ a {
   z-index: 1;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+}
+
 h1,
 h2,
 h2,
@@ -964,6 +972,7 @@ p {
   color: #12232e;
 }
 .offcanvas.offcanvas--menu .menu__body .nav-list .nav__item .dropdown-list {
+  padding-bottom: 24px;
   display: none;
 }
 .offcanvas.offcanvas--menu .menu__body .nav-list .nav__item .dropdown-list .dropdown-nav__link {
@@ -1320,8 +1329,8 @@ footer .bottom-footer-wrapper .bottom-footer .footer-quicks-nav .nav__item:hover
 
 .section--detail .detail__tag {
   font-size: 16px;
-  color: #14918b;
-  background-color: #f9f9f9;
+  color: white;
+  background-color: #14918b;
   padding: 2px 16px;
   border-radius: 20px;
   display: inline-block;
