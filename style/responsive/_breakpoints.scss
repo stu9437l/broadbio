@@ -79,6 +79,8 @@ $mobile: 500px;
     .top-header {
       justify-content: flex-start;
       align-items: center;
+      border-bottom: 1px solid $black-25-color;
+
       .center-column,
       .right-column {
         width: auto;
@@ -149,8 +151,8 @@ $mobile: 500px;
     }
     &.modal--search {
       .modal-content {
-        padding: 24px;
         .modal-body {
+          padding: 24px;
           .search-wrapper {
             margin-bottom: 60px;
             position: relative;
@@ -178,7 +180,7 @@ $mobile: 500px;
     //   transform: 0;
     // }
     .modal-body {
-      padding: 24px;
+      padding: 48px 24px 24px 24px;
       .section-title__heading {
         font-size: 32px !important;
       }

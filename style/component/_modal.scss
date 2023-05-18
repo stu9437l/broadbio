@@ -23,7 +23,7 @@
   }
   &.offcanvas--menu {
     .menu__header {
-      margin-bottom: 40px;
+      margin-bottom: 24px;
       .brand-logo {
         // display: block;
         // text-align: center;
@@ -93,14 +93,17 @@
 // search form modal
 
 .modal {
+  .modal-dialog {
+    position: relative;
+  }
   &.modal--search {
     .modal-content {
-      padding: 32px;
       .modal-body {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding: 32px;
         .search-wrapper {
           margin-bottom: 80px;
           position: relative;
@@ -130,8 +133,8 @@
 .modal--filter,
 .modal--job-filter {
   .modal-content {
-    padding: 24px;
     .modal-body {
+      padding: 24px;
       .form-select {
         margin-bottom: 32px;
       }
@@ -142,10 +145,10 @@
 // job apply modal form
 .modal--jobApply-form {
   .modal-body {
-    padding: 64px;
-    .button-close {
-      top: 12px;
-      right: 12px;
-    }
+    padding: 40px;
+    // .button-close {
+    //   top: 12px;
+    //   right: 12px;
+    // }
   }
 }
