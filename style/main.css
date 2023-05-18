@@ -40,6 +40,7 @@ body {
 ul {
   margin: 0;
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -275,6 +276,16 @@ p {
   padding: 16px 24px;
 }
 
+.input-check-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.input-check-field .label {
+  margin-bottom: 0 !important;
+  margin-left: 16px;
+}
+
 .form-check-input {
   position: relative;
   height: 24px;
@@ -313,15 +324,6 @@ p {
   font-weight: 600;
   color: #616161;
   margin-bottom: 24px;
-}
-.checklist .input-check-field {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-.checklist .input-check-field .label {
-  margin-bottom: 0 !important;
-  margin-left: 16px;
 }
 
 .select-wrapper {
@@ -1067,6 +1069,7 @@ header .bottom-header-wrapper .bottom-header .nav-list .nav__item .dropdown-list
 }
 
 .social-media-list.socila-media--circle {
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1095,6 +1098,9 @@ header .bottom-header-wrapper .bottom-header .nav-list .nav__item .dropdown-list
 .social-media-list.socila-media--circle .social-media__item i {
   font-size: 20px;
   color: white;
+}
+.social-media-list.socila-media--square {
+  padding: 0;
 }
 .social-media-list.socila-media--square li {
   display: flex;
@@ -1706,6 +1712,7 @@ footer .bottom-footer-wrapper .bottom-footer .footer-quicks-nav .nav__item:hover
 }
 .job-detail .description-list {
   list-style: circle;
+  padding-left: 24px;
 }
 .job-detail .description-list .description__item {
   margin-bottom: 12px;
@@ -2086,5 +2093,54 @@ footer .bottom-footer-wrapper .bottom-footer .footer-quicks-nav .nav__item:hover
   .mob-border-top {
     border-top: 1px solid rgba(0, 0, 0, 0.25);
     padding-top: 24px;
+  }
+  .contact-form {
+    padding: 24px;
+    background-color: white;
+  }
+  .table-of-content {
+    padding: 24px;
+  }
+  #privacy__table-of-content {
+    display: none;
+  }
+  .editor-content h1,
+  .editor-content h2,
+  .editor-content h2,
+  .editor-content h3,
+  .editor-content h4,
+  .editor-content h5,
+  .editor-content h6 {
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  .editor-content p {
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .editor-content a {
+    color: #14918b;
+    text-decoration: underline;
+  }
+  .editor-content a:hover {
+    font-weight: 500;
+  }
+  .editor-content h1,
+  .editor-content h2 {
+    font-size: 32px;
+  }
+  .editor-content h3 {
+    font-size: 24px;
+  }
+  .editor-content h4,
+  .editor-content h5 {
+    font-size: 20px;
+  }
+  .editor-content h6,
+  .editor-content p {
+    font-size: 20px;
+  }
+  .editor-content small {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */

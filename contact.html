@@ -146,7 +146,7 @@
           <div class="text-center">
             <h6 class="text text-md text-uppercase">Follow on Social media</h6>
           </div>
-          <ul class="social-media-list">
+          <ul class="social-media-list socila-media--circle">
             <li>
               <a href="" class="social-media__item facebook">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -252,6 +252,13 @@
               >
                 <i class="fa-solid fa-bars"></i>
               </button>
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
               <button
                 class="search-button"
                 data-bs-toggle="modal"
@@ -360,7 +367,7 @@
     <main class="main">
       <section class="section section--contact-form section--padding">
         <div class="container">
-          <div class="col-md-6 mx-auto">
+          <div class="col-12 col-md-6 mx-auto">
             <div class="contact-form">
               <div class="section-title section-title--center">
                 <h2 class="section-title__heading">Let's go in touch</h2>
@@ -370,9 +377,9 @@
               </div>
               <form action="">
                 <div class="input-field">
-                  <lable class="label" for="fullname">
+                  <label class="label" for="fullname">
                     Full Name <span class="is-required">*</span>
-                  </lable>
+                  </label>
                   <input
                     type="text"
                     class="form-control"
@@ -382,9 +389,9 @@
                   />
                 </div>
                 <div class="input-field">
-                  <lable class="label" for="email">
+                  <label class="label" for="email">
                     Email Address <span class="is-required">*</span>
-                  </lable>
+                  </label>
                   <input
                     type="email"
                     class="form-control"
@@ -394,9 +401,9 @@
                   />
                 </div>
                 <div class="input-field">
-                  <lable class="label" for="phone">
+                  <label class="label" for="phone">
                     Phone Number <span class="is-required">*</span>
-                  </lable>
+                  </label>
                   <input
                     type="text"
                     class="form-control"
@@ -406,7 +413,7 @@
                   />
                 </div>
                 <div class="input-field">
-                  <lable class="label" for="message"> Message </lable>
+                  <label class="label" for="message"> Message </label>
                   <textarea
                     name="message"
                     id="message"
@@ -429,8 +436,8 @@
     <footer>
       <div class="top-footer-wrapper">
         <div class="container">
-          <div class="row gx-5">
-            <div class="col-md-4 pe-5">
+          <div class="row gx-md-5">
+            <div class="col-md-4 pe-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 About US
               </h3>
@@ -445,25 +452,25 @@
               <ul class="footer-contact-list">
                 <li>
                   <h5 class="contact__item">
-                    <span class="label"> Phone : </span>
+                    <span class="contact-label"> Phone : </span>
                     <span class="text-value"> +9800123456 </span>
                   </h5>
                 </li>
                 <li>
                   <h5 class="contact__item">
-                    <span class="label"> Tel: </span>
+                    <span class="contact-label"> Tel: </span>
                     <span class="text-value"> +1-541-234-3010 </span>
                   </h5>
                 </li>
                 <li>
                   <h5 class="contact__item">
-                    <span class="label"> Email : </span>
+                    <span class="contact-label"> Email : </span>
                     <span class="text-value"> broadbiography@gmail.com </span>
                   </h5>
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 px-5">
+            <div class="col-md-4 px-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 Latest Posts
               </h3>
@@ -527,7 +534,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 ps-5">
+            <div class="col-md-4 ps-md-5">
               <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
               <ul class="article-tabs-list article-tabs--white">
                 <li>
@@ -563,7 +570,7 @@
         <div class="container">
           <div class="bottom-footer">
             <p class="copyright-text">
-              @2023: all copyright reserved to topnepal
+              @2023: all copyright reserved to broadbiography
             </p>
             <ul class="footer-quicks-nav">
               <li>
@@ -598,6 +605,13 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- slick slider js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- custom script -->
     <script src="./script/script.js"></script>
   </body>

@@ -435,7 +435,6 @@ $mobile: 500px;
       }
     }
   }
-
   .job-detail {
     .job-detail__header {
       margin-bottom: 32px;
@@ -467,5 +466,61 @@ $mobile: 500px;
   .mob-border-top {
     border-top: 1px solid $black-25-color;
     padding-top: 24px;
+  }
+
+  //contact us
+  .contact-form {
+    padding: 24px;
+    background-color: white;
+  }
+
+  //editor text
+
+  .table-of-content {
+    padding: 24px;
+  }
+  #privacy__table-of-content {
+    display: none;
+  }
+  .editor-content {
+    h1,
+    h2,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 16px;
+      font-weight: $bold;
+    }
+    p {
+      font-weight: $regular;
+      margin-bottom: 40px;
+    }
+    a {
+      color: $green-color;
+      text-decoration: underline;
+      &:hover {
+        font-weight: $semi-bold;
+      }
+    }
+    h1,
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: $lg-font;
+    }
+    h4,
+    h5 {
+      font-size: 20px;
+    }
+    h6,
+    p {
+      font-size: $md-font;
+    }
+    small {
+      font-size: $sm-font;
+    }
   }
 }

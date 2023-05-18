@@ -41,6 +41,16 @@ $(".article-card---must-read").slick({
   centerPadding: "24px",
 });
 
+//toggle table of content in mob
+
+$("#toggle__table-of-content").change(function () {
+  if (this.checked) {
+    $("#privacy__table-of-content").slideDown();
+  } else {
+    $("#privacy__table-of-content").slideUp();
+  }
+});
+
 // media query in js
 function checkMobileScreen() {
   if ($(window).width() <= 768) {

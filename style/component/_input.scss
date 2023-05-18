@@ -27,7 +27,15 @@
 .form-control::file-selector-button {
   padding: 16px 24px;
 }
-
+.input-check-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  .label {
+    margin-bottom: 0 !important;
+    margin-left: 16px;
+  }
+}
 .form-check-input {
   position: relative;
   height: 24px;
@@ -68,16 +76,6 @@
     font-weight: 600;
     color: $light-black-color;
     margin-bottom: 24px;
-  }
-  .input-check-field {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-
-    .label {
-      margin-bottom: 0 !important;
-      margin-left: 16px;
-    }
   }
 }
 
