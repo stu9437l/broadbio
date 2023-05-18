@@ -395,7 +395,27 @@ $mobile: 500px;
         background-color: white;
       }
     }
-    .grid-fashion-layout {
+  }
+}
+
+// pages responsive
+
+// job
+.job-list {
+  li {
+    &:last-child {
+      .job__item {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .job__item {
+    margin-bottom: 16px;
+    .job__title {
+      font-weight: 600;
+    }
+    .job__salary {
+      display: none;
     }
   }
 }

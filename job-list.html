@@ -23,6 +23,7 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="./style/main.css" />
   </head>
+
   <body>
     <div
       class="offcanvas offcanvas-start offcanvas--menu"
@@ -146,7 +147,7 @@
           <div class="text-center">
             <h6 class="text text-md text-uppercase">Follow on Social media</h6>
           </div>
-          <ul class="social-media-list">
+          <ul class="social-media-list socila-media--circle">
             <li>
               <a href="" class="social-media__item facebook">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -240,141 +241,31 @@
         </div>
       </div>
     </div>
-    <header>
-      <div class="top-header-wrapper">
-        <div class="container">
-          <div class="top-header">
-            <div class="left-column">
-              <button
-                class="menu-button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offacanvas__menu"
+    <div
+      class="modal fade modal--job-filter"
+      id="modal__job-filter"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="button-close" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="fitler-content">
+              <h3 class="text text--lg text--bold text--black">Filter Data</h3>
+              <select
+                name="select-option"
+                id=""
+                class="form-control form-select mw-256px"
               >
-                <i class="fa-solid fa-bars"></i>
-              </button>
-              <button
-                class="search-button"
-                data-bs-toggle="modal"
-                data-bs-target="#modal__search"
-              >
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
-            <div class="center-column">
-              <a href="" class="brand-logo">
-                <img
-                  class="logo-image"
-                  src="./images/logo/original-logo.png"
-                  alt="brand-logo"
-                />
-              </a>
-            </div>
-            <div class="right-column">
-              <ul class="header-social-media-list">
-                <li>
-                  <a href="" class="social-media__item facebook--color">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="social-media__item instagram--color">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="social-media__item twitter--color">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="social-media__item tiktok--color">
-                    <i class="fa-brands fa-tiktok"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-header-wrapper">
-        <div class="container">
-          <div class="bottom-header">
-            <nav>
-              <ul class="nav-list">
-                <li class="nav__item">
-                  <a href="" class="nav__link"> Entertainment </a>
-                  <ul class="dropdown-list">
-                    <li>
-                      <a href="" class="dropdown-nav__link"> Celebrity </a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-nav__link"> Movie </a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-nav__link"> TV </a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-nav__link"> Music </a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-nav__link"> Books </a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-nav__link"> Cover Stories </a>
-                    </li>
-                    <li>
-                      <a href="" class="dropdown-nav__link">
-                        2023 Reading Challenge
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav__item">
-                  <a href="" class="nav__link"> Fashion </a>
-                </li>
-                <li class="nav__item">
-                  <a href="" class="nav__link"> Beauty </a>
-                </li>
-
-                <li class="nav__item">
-                  <a href="" class="nav__link"> Wellness </a>
-                </li>
-                <li class="nav__item">
-                  <a href="" class="nav__link"> Family </a>
-                </li>
-                <li class="nav__item">
-                  <a href="" class="nav__link"> Video </a>
-                </li>
-                <li class="nav__item">
-                  <a href="" class="nav__link"> Fitness </a>
-                </li>
-              </ul>
-            </nav>
-            <a href="" class="button button--green button--pill">
-              Submit Your Biography
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <section class="section section--breadcrumb">
-        <div class="container">
-          <ul class="breadcrumb-nav">
-            <li class="breadcrumb-nav__item">
-              <a href="" class="breadcrumb-nav__link"> Home </a>
-            </li>
-            <li class="breadcrumb-nav__item">
-              <a href="" class="breadcrumb-nav__link"> Categories </a>
-            </li>
-            <li class="breadcrumb-nav__item">Job List</li>
-          </ul>
-        </div>
-      </section>
-      <section class="section section--job section--padding">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-md-3">
+                <option value="">Ascending Salary range</option>
+                <option value="">Descending Salary range</option>
+                <option value="">Most Recent</option>
+                <option value="">Most Famous</option>
+              </select>
               <div class="checklist">
                 <h4 class="checklist__title">Job Category</h4>
                 <ul class="check-input-list">
@@ -547,9 +438,330 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="top-header-wrapper">
+        <div class="container">
+          <div class="top-header">
+            <div class="left-column">
+              <button
+                class="menu-button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offacanvas__menu"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
+              <button
+                class="search-button"
+                data-bs-toggle="modal"
+                data-bs-target="#modal__search"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="center-column">
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
+            </div>
+            <div class="right-column">
+              <ul class="header-social-media-list">
+                <li>
+                  <a href="" class="social-media__item facebook--color">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item instagram--color">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item twitter--color">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-media__item tiktok--color">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header-wrapper">
+        <div class="container">
+          <div class="bottom-header">
+            <nav>
+              <ul class="nav-list">
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Entertainment </a>
+                  <ul class="dropdown-list">
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Celebrity </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Movie </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> TV </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Music </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Books </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link"> Cover Stories </a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-nav__link">
+                        2023 Reading Challenge
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Fashion </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Beauty </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Wellness </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Family </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Video </a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link"> Fitness </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="" class="button button--green button--pill">
+              Submit Your Biography
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section--breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb-nav">
+            <li class="breadcrumb-nav__item">
+              <a href="" class="breadcrumb-nav__link"> Home </a>
+            </li>
+            <li class="breadcrumb-nav__item">
+              <a href="" class="breadcrumb-nav__link"> Categories </a>
+            </li>
+            <li class="breadcrumb-nav__item">Job List</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--job section--padding">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-3 d-none d-md-block">
+              <div class="checklist">
+                <h4 class="checklist__title">Job Category</h4>
+                <ul class="check-input-list">
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="job-category"
+                        class="form-check-input"
+                        id="job-category-1"
+                      />
+                      <label for="job-category-1" class="label label--light">
+                        Web designing
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="job-category"
+                        class="form-check-input"
+                        id="job-category-2"
+                      />
+                      <label for="job-category-2" class="label label--light">
+                        Content Writer
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="job-category"
+                        class="form-check-input"
+                        id="job-category-2"
+                      />
+                      <label for="job-category-2" class="label label--light">
+                        Dev Development
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="job-category"
+                        class="form-check-input"
+                        id="job-category-2"
+                      />
+                      <label for="job-category-2" class="label label--light">
+                        Security Guard
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="job-category"
+                        class="form-check-input"
+                        id="job-category-2"
+                      />
+                      <label for="job-category-2" class="label label--light">
+                        Senior Teacher
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="checklist">
+                <h4 class="checklist__title">Salary range</h4>
+                <ul class="check-input-list">
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="salary-range"
+                        class="form-check-input"
+                        id="salary-range-1"
+                      />
+                      <label for="salary-range-1" class="label label--light">
+                        10k - 20k
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="salary-range"
+                        class="form-check-input"
+                        id="salary-range-2"
+                      />
+                      <label for="salary-range-2" class="label label--light">
+                        20k - 30k
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="salary-range"
+                        class="form-check-input"
+                        id="salary-range-3"
+                      />
+                      <label for="salary-range-3" class="label label--light">
+                        30k - 40k
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="salary-range"
+                        class="form-check-input"
+                        id="salary-range-4"
+                      />
+                      <label for="salary-range-4" class="label label--light">
+                        40k +
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="checklist">
+                <h4 class="checklist__title">Working Type</h4>
+                <ul class="check-input-list">
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="working-type"
+                        class="form-check-input"
+                        id="working-type-1"
+                      />
+                      <label for="working-type-1" class="label label--light">
+                        Part Time
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="working-type"
+                        class="form-check-input"
+                        id="working-type-2"
+                      />
+                      <label for="working-type-2" class="label label--light">
+                        Full Time
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-check-field">
+                      <input
+                        type="checkbox"
+                        name="working-type"
+                        class="form-check-input"
+                        id="working-type-3"
+                      />
+                      <label for="working-type-3" class="label label--light">
+                        Remote Work
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div class="col-md-8">
               <div class="select-wrapper">
-                <div class="select__title">Showing <span>20</span> Results</div>
+                <div class="select__title">
+                  <span class="d-none d-md-inline">Showing</span>
+                  <span>20</span> Jobs
+                </div>
                 <select
                   name="select-option"
                   id=""
@@ -560,11 +772,18 @@
                   <option value="">Most Recent</option>
                   <option value="">Most Famous</option>
                 </select>
+                <button
+                  class="button--outline button--green button--pill"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal__job-filter"
+                >
+                  FILTER <i class="fa-solid fa-arrow-up-wide-short ms-2"></i>
+                </button>
               </div>
               <ul class="job-list">
                 <li>
                   <a href="" class="job__item">
-                    <div class="d-flex me-4">
+                    <div class="d-flex me-md-4">
                       <div class="job__image">
                         <img
                           class="img-fluid"
@@ -573,7 +792,7 @@
                         />
                       </div>
                       <div class="job__content">
-                        <h3 class="job__tittle">Demand Planning Analyst</h3>
+                        <h3 class="job__title">Demand Planning Analyst</h3>
                         <p class="job__date">Apply Before : 4 weeks from now</p>
                       </div>
                     </div>
@@ -582,7 +801,7 @@
                 </li>
                 <li>
                   <a href="" class="job__item">
-                    <div class="d-flex me-4">
+                    <div class="d-flex me-md-4">
                       <div class="job__image">
                         <img
                           class="img-fluid"
@@ -591,7 +810,7 @@
                         />
                       </div>
                       <div class="job__content">
-                        <h3 class="job__tittle">Net Developer Junior level</h3>
+                        <h3 class="job__title">Net Developer Junior level</h3>
                         <p class="job__date">Apply Before : 4 weeks from now</p>
                       </div>
                     </div>
@@ -600,7 +819,7 @@
                 </li>
                 <li>
                   <a href="" class="job__item">
-                    <div class="d-flex me-4">
+                    <div class="d-flex me-md-4">
                       <div class="job__image">
                         <img
                           class="img-fluid"
@@ -609,7 +828,7 @@
                         />
                       </div>
                       <div class="job__content">
-                        <h3 class="job__tittle">Demand Planning Analyst</h3>
+                        <h3 class="job__title">Demand Planning Analyst</h3>
                         <p class="job__date">Apply Before : 4 weeks from now</p>
                       </div>
                     </div>
@@ -618,7 +837,7 @@
                 </li>
                 <li>
                   <a href="" class="job__item">
-                    <div class="d-flex me-4">
+                    <div class="d-flex me-md-4">
                       <div class="job__image">
                         <img
                           class="img-fluid"
@@ -627,7 +846,7 @@
                         />
                       </div>
                       <div class="job__content">
-                        <h3 class="job__tittle">Net Developer (Intern)</h3>
+                        <h3 class="job__title">Net Developer (Intern)</h3>
                         <p class="job__date">Apply Before : 4 weeks from now</p>
                       </div>
                     </div>
@@ -636,7 +855,7 @@
                 </li>
                 <li>
                   <a href="" class="job__item">
-                    <div class="d-flex me-4">
+                    <div class="d-flex me-md-4">
                       <div class="job__image">
                         <img
                           class="img-fluid"
@@ -645,7 +864,7 @@
                         />
                       </div>
                       <div class="job__content">
-                        <h3 class="job__tittle">Digital Marketing</h3>
+                        <h3 class="job__title">Digital Marketing</h3>
                         <p class="job__date">Apply Before : 4 weeks from now</p>
                       </div>
                     </div>
@@ -654,7 +873,7 @@
                 </li>
                 <li>
                   <a href="" class="job__item">
-                    <div class="d-flex me-4">
+                    <div class="d-flex me-md-4">
                       <div class="job__image">
                         <img
                           class="img-fluid"
@@ -663,7 +882,7 @@
                         />
                       </div>
                       <div class="job__content">
-                        <h3 class="job__tittle">Digital Marketing 360°</h3>
+                        <h3 class="job__title">Digital Marketing 360°</h3>
                         <p class="job__date">Apply Before : 4 weeks from now</p>
                       </div>
                     </div>
@@ -672,7 +891,7 @@
                 </li>
                 <li>
                   <a href="" class="job__item">
-                    <div class="d-flex me-4">
+                    <div class="d-flex me-md-4">
                       <div class="job__image">
                         <img
                           class="img-fluid"
@@ -681,7 +900,7 @@
                         />
                       </div>
                       <div class="job__content">
-                        <h3 class="job__tittle">Front Desk Counselor</h3>
+                        <h3 class="job__title">Front Desk Counselor</h3>
                         <p class="job__date">Apply Before : 4 weeks from now</p>
                       </div>
                     </div>
@@ -697,8 +916,8 @@
     <footer>
       <div class="top-footer-wrapper">
         <div class="container">
-          <div class="row gx-5">
-            <div class="col-md-4 pe-5">
+          <div class="row gx-md-5">
+            <div class="col-md-4 pe-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 About US
               </h3>
@@ -713,25 +932,25 @@
               <ul class="footer-contact-list">
                 <li>
                   <h5 class="contact__item">
-                    <span class="label"> Phone : </span>
+                    <span class="contact-label"> Phone : </span>
                     <span class="text-value"> +9800123456 </span>
                   </h5>
                 </li>
                 <li>
                   <h5 class="contact__item">
-                    <span class="label"> Tel: </span>
+                    <span class="contact-label"> Tel: </span>
                     <span class="text-value"> +1-541-234-3010 </span>
                   </h5>
                 </li>
                 <li>
                   <h5 class="contact__item">
-                    <span class="label"> Email : </span>
+                    <span class="contact-label"> Email : </span>
                     <span class="text-value"> broadbiography@gmail.com </span>
                   </h5>
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 px-5">
+            <div class="col-md-4 px-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 Latest Posts
               </h3>
@@ -795,7 +1014,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 ps-5">
+            <div class="col-md-4 ps-md-5">
               <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
               <ul class="article-tabs-list article-tabs--white">
                 <li>
@@ -831,7 +1050,7 @@
         <div class="container">
           <div class="bottom-footer">
             <p class="copyright-text">
-              @2023: all copyright reserved to topnepal
+              @2023: all copyright reserved to broadbiography
             </p>
             <ul class="footer-quicks-nav">
               <li>

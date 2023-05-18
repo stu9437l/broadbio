@@ -920,10 +920,12 @@ p {
   transform: translateY(-50%);
 }
 
-.modal--filter .modal-content {
+.modal--filter .modal-content,
+.modal--job-filter .modal-content {
   padding: 24px;
 }
-.modal--filter .modal-content .modal-body .form-select {
+.modal--filter .modal-content .modal-body .form-select,
+.modal--job-filter .modal-content .modal-body .form-select {
   margin-bottom: 32px;
 }
 
@@ -1612,7 +1614,7 @@ footer .bottom-footer-wrapper .bottom-footer .footer-quicks-nav .nav__item:hover
 .job-list .job__item .job__content {
   margin-left: 24px;
 }
-.job-list .job__item .job__tittle {
+.job-list .job__item .job__title {
   font-size: 24px;
   font-weight: 700;
   color: 700;
@@ -2038,4 +2040,16 @@ footer .bottom-footer-wrapper .bottom-footer .footer-quicks-nav .nav__item:hover
     padding: 12px;
     background-color: white;
   }
+}
+.job-list li:last-child .job__item {
+  margin-bottom: 0;
+}
+.job-list .job__item {
+  margin-bottom: 16px;
+}
+.job-list .job__item .job__title {
+  font-weight: 600;
+}
+.job-list .job__item .job__salary {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
