@@ -1748,7 +1748,7 @@ footer .bottom-footer-wrapper .bottom-footer .footer-quicks-nav .nav__item:hover
   margin-left: 24px;
 }
 .job-list .job__item .job__title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 4px;
   color: #12232e;
@@ -2199,6 +2199,7 @@ footer .bottom-footer-wrapper .bottom-footer .footer-quicks-nav .nav__item:hover
     margin-bottom: 0;
   }
   .job-list .job__item {
+    padding: 16px;
     margin-bottom: 16px;
   }
   .job-list .job__item .job__title {
