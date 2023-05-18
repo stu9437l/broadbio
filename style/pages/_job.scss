@@ -17,8 +17,7 @@
     }
     .job__title {
       font-size: $lg-font;
-      font-weight: $bold;
-      color: $bold;
+      font-weight: $semi-bold;
       margin-bottom: 4px;
       color: $black-color;
     }
@@ -85,7 +84,7 @@
       display: flex;
       align-items: flex-start;
       .job__label {
-        width: 200px;
+        width: 256px;
         color: $black-color;
         font-size: $md-font;
         font-weight: $regular;

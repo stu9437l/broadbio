@@ -11,7 +11,7 @@
   border: 0;
   font-size: 20px;
   color: red;
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 20px;
 }
@@ -23,7 +23,6 @@
   }
   &.offcanvas--menu {
     .menu__header {
-      position: relative;
       margin-bottom: 40px;
       .brand-logo {
         // display: block;
@@ -141,11 +140,11 @@
 
 // job apply modal form
 .modal--jobApply-form {
-    .modal-body {
-      padding: 64px;
-      .button-close {
-        top: 12px;
-        right: 12px;
-      }
+  .modal-body {
+    padding: 64px;
+    .button-close {
+      top: 12px;
+      right: 12px;
     }
   }
+}

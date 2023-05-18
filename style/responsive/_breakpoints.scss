@@ -217,6 +217,7 @@ $mobile: 500px;
     }
     .section-title__heading {
       margin-bottom: 0px;
+      font-size: 32px;
     }
     .section-title__description {
       font-size: 20px;
@@ -246,8 +247,8 @@ $mobile: 500px;
       }
     }
     .article__tag {
-      font-size: $md-font;
-      font-weight: $semi-bold;
+      // font-size: $md-font;
+      // font-weight: $semi-bold;
       margin-bottom: 8px;
       &.article__tag--pill {
         padding: 2px 16px;
@@ -266,11 +267,11 @@ $mobile: 500px;
       }
     }
     .article__title {
-      font-size: 22px;
-      font-weight: 600;
-      color: $black-color;
+      // font-size: 22px;
+      // font-weight: 600;
+      // color: $black-color;
       line-height: 1.4;
-      cursor: pointer;
+      // cursor: pointer;
 
       &:hover {
         color: $green-color;

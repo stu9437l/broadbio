@@ -9,17 +9,17 @@
       width: 100%;
       background-color: #ededed;
       bottom: -16px;
-      left: -16px;
+      left: -12px;
       transform: translateZ(-1px);
     }
     .article__title {
       font-size: $lg-font;
-      font-weight: $bold;
+      font-weight: $semi-bold;
     }
   }
   .article__tag {
     font-size: $sm-font;
-    font-weight: $semi-bold;
+    font-weight: $regular;
     margin-bottom: 8px;
     &.article__tag--pill {
       padding: 2px 16px;

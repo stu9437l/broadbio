@@ -24,14 +24,14 @@
     display: flex;
     align-items: center;
     .writer__image {
-      height: 48px;
-      width: 48px;
+      height: 32px;
+      width: 32px;
       border-radius: 50%;
       overflow: hidden;
     }
     .article__writer {
       margin-bottom: 0;
-      margin-left: 24px;
+      margin-left: 12px;
       font-size: $md-font;
       color: $light-black-color;
       font-weight: $regular;
@@ -95,7 +95,7 @@
     .quick-content-wrapper {
       float: left;
       flex-shrink: 0;
-      width: 400px;
+      width: 440px;
       border: 1px solid $black-25-color;
       margin-right: 24px;
       margin-bottom: 24px;
@@ -230,7 +230,7 @@
       margin-bottom: 40px;
       .quote__text {
         font-size: 20px;
-        font-weight: $bold;
+        font-weight: $semi-bold;
         color: $bold;
         margin-bottom: 8px;
       }
@@ -247,6 +247,10 @@
       .article__image {
         height: 100px !important;
         width: 100px !important;
+        img {
+          height: 100%;
+          width: 100%;
+        }
       }
       li {
         list-style: none !important;

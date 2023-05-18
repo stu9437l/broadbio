@@ -1,23 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 body {
-  font-family: "League Spartan", sans-serif;
+  // font-family: "League Spartan", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   color: #12232e;
   background-color: white;
   font-size: 18px !important;
 }
-// .row {
-//   --bs-gutter-x: 3rem;
-//   &.g-0 {
-//     --bs-gutter-x: 0rem !important;
-//   }
-// }
 
 ul {
   margin: 0;
@@ -41,5 +36,21 @@ a {
   }
   &.section--light {
     background-color: $light-white-color;
+  }
+  &.section--curve {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../../images/curve.png);
+      height: 192px;
+      width: 100vw;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 50%;
+      background-size: 100% 100%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
   }
 }
