@@ -41,6 +41,23 @@ $(".article-card---must-read").slick({
   centerPadding: "24px",
 });
 
+$(".four-items--slider").slick({
+  dots: false,
+  infinite: false,
+  arrows: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
 //toggle table of content in mob
 
 $("#toggle__table-of-content").change(function () {

@@ -99,6 +99,7 @@
       border: 1px solid $black-25-color;
       margin-right: 24px;
       margin-bottom: 24px;
+
       .editor-content {
         flex: 1;
         img {
@@ -155,7 +156,8 @@
         font-size: $md-font;
         color: $black-color;
         font-weight: $semi-bold;
-        width: 200px;
+        width: 150px;
+        flex-shrink: 0;
       }
       .fact__text {
         background-color: $light-white-color;
@@ -242,6 +244,10 @@
       background-color: $light-white-color;
       padding: 24px;
       margin-bottom: 40px;
+      .article__image {
+        height: 100px !important;
+        width: 100px !important;
+      }
       li {
         list-style: none !important;
         a {

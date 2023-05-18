@@ -1,4 +1,22 @@
 .article-card {
+  &.article-card--biography {
+    position: relative;
+    transform-style: preserve-3d;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: #ededed;
+      bottom: -16px;
+      left: -16px;
+      transform: translateZ(-1px);
+    }
+    .article__title {
+      font-size: $lg-font;
+      font-weight: $bold;
+    }
+  }
   .article__tag {
     font-size: $sm-font;
     font-weight: $semi-bold;
@@ -44,11 +62,6 @@
     }
     img {
       transition: $transition;
-    }
-    &:hover {
-      // img {
-      //   transform: scale(1.1);
-      // }
     }
   }
   .article__writer {

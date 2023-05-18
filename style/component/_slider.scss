@@ -4,6 +4,45 @@
     padding: 0 12px;
   }
 }
+
+//related cards slider
+.four-items--slider {
+  .col-md-3 {
+    padding: 0 12px;
+  }
+  .slick-arrow {
+    top: -100px;
+    &.slick-next {
+      height: 60px;
+      width: 60px;
+      background-color: $green-color;
+      border-radius: 50%;
+      right: 0;
+      &::before {
+        content: "\f054";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 24px;
+      }
+    }
+    &.slick-prev {
+      left: calc(100% - 132px);
+      height: 60px;
+      width: 60px;
+      z-index: 1;
+      background-color: $green-color;
+      border-radius: 50%;
+      &::before {
+        content: "\f053";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+// custom dots
 .slick-dots--circle {
   li {
     height: auto;
@@ -26,6 +65,8 @@
     }
   }
 }
+
+// custom arrows
 .slick-arrows--bottom {
   .slick-arrow {
     top: calc(100% + 24px);
@@ -58,6 +99,42 @@
   }
 }
 
+// biography slider
+.slick-arrows--biography {
+  .slick-arrow {
+    display: none !important;
+    top: calc(100% + 24px);
+    &.slick-next {
+      height: 48px;
+      width: 48px;
+      right: calc(50% - 56px);
+      background-color: $green-color;
+      border-radius: 50%;
+      &::before {
+        content: "\f054";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 24px;
+      }
+    }
+    &.slick-prev {
+      left: calc(50% - 56px);
+      height: 48px;
+      width: 48px;
+      z-index: 1;
+      background-color: $green-color;
+      border-radius: 50%;
+      &::before {
+        content: "\f053";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+//must read card
 .article-card---must-read {
   .slick-arrow {
     top: 80%;

@@ -20,9 +20,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- slick slider css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- custom css link -->
     <link rel="stylesheet" href="./style/main.css" />
   </head>
+
   <body>
     <div
       class="offcanvas offcanvas-start offcanvas--menu"
@@ -146,7 +163,7 @@
           <div class="text-center">
             <h6 class="text text-md text-uppercase">Follow on Social media</h6>
           </div>
-          <ul class="social-media-list">
+          <ul class="social-media-list socila-media--circle">
             <li>
               <a href="" class="social-media__item facebook">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -240,7 +257,6 @@
         </div>
       </div>
     </div>
-
     <header>
       <div class="top-header-wrapper">
         <div class="container">
@@ -253,6 +269,13 @@
               >
                 <i class="fa-solid fa-bars"></i>
               </button>
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
               <button
                 class="search-button"
                 data-bs-toggle="modal"
@@ -555,6 +578,11 @@
                       for too long – let’s not forget Tim Cook’s “sitting is the
                       new factor” line.
                     </p>
+                    <img
+                      src="
+                            https://insidesmallbusiness.com.au/wp-content/uploads/2021/04/Social-Media-SME-03.jpg  "
+                      alt=""
+                    />
                     <h3>Detail Information</h3>
                     <p>
                       Diana saves Steve Trevor who has crashed on Themyscira. He
@@ -569,6 +597,10 @@
                       globe. Wonder Woman joins him in the world of man. Diana
                       was also joined on the show by her brother Jonathan Dior.
                     </p>
+                    <img
+                      src="https://pastatic.picsart.com/cms-pastatic/4dfc0076-669b-48ca-a7d4-a6965f3aa649.png"
+                      alt=""
+                    />
                     <div class="quote-wrapper">
                       <i class="fa-solid fa-quote-left"></i>
                       <div class="ms-3">
@@ -719,16 +751,16 @@
                     <a href="" class="article__tab"> # Fitness </a>
                   </li>
                   <li>
-                    <a href="" class="article__tab"> # Entertainment </a>
+                    <a href="" class="article__tab"> # Sports </a>
                   </li>
                   <li>
-                    <a href="" class="article__tab"> # Sports </a>
+                    <a href="" class="article__tab"> # Nature </a>
                   </li>
                 </ul>
               </div>
               <div class="nearest-articles">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-md-6 mb-4 mb-md-0">
                     <div class="article-card article-card--horizontal">
                       <a href="" class="article__image">
                         <img
@@ -748,7 +780,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-6">
                     <div
                       class="article-card article-card--horizontal article-card--reversed"
                     >
@@ -773,7 +805,7 @@
                 </div>
               </div>
               <div class="article-correction-content">
-                <div class="me-4">
+                <div class="me-md-4">
                   <h3 class="text text--black text--bold text--lg">
                     See any mistake? Help Us Correct
                   </h3>
@@ -787,7 +819,7 @@
                 </button>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4 col-xxl-3 d-none d-md-block">
               <div class="aside-content">
                 <div class="newsletter-wrapper">
                   <div class="newsletter-icon">
@@ -978,23 +1010,80 @@
       </section>
       <section class="section section--related section--padding">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title section-title--responsive">
             <h2 class="section-title__heading">Top Related Articles</h2>
-            <p class="section-title-description">
+            <p class="section-title__description">
               There are many variations available but the majority
             </p>
           </div>
-          <div class="row">
+          <div class="row four-items--slider">
             <div class="col-md-3">
               <div class="article-card article-card--editor-pick">
                 <a href="" class="article__image">
                   <img
                     class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    src="https://images.pexels.com/photos/3289557/pexels-photo-3289557.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                   />
                 </a>
-                <div class="article__content">
+                <div class="article__content px-0">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/1559086/pexels-photo-1559086.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content px-0">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/3727125/pexels-photo-3727125.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content px-0">
+                  <a href="" class="article__tag article__tag--green">
+                    Beutiful Profile
+                  </a>
+                  <a href="" class="article__title">
+                    These Mental Health Podcasts Will Make You
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="article-card article-card--editor-pick">
+                <a href="" class="article__image">
+                  <img
+                    class="img-fluid"
+                    src="https://images.pexels.com/photos/3312175/pexels-photo-3312175.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt=""
+                  />
+                </a>
+                <div class="article__content px-0">
                   <a href="" class="article__tag article__tag--green">
                     Beutiful Profile
                   </a>
@@ -1013,45 +1102,7 @@
                     alt=""
                   />
                 </a>
-                <div class="article__content">
-                  <a href="" class="article__tag article__tag--green">
-                    Beutiful Profile
-                  </a>
-                  <a href="" class="article__title">
-                    These Mental Health Podcasts Will Make You
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="article-card article-card--editor-pick">
-                <a href="" class="article__image">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt=""
-                  />
-                </a>
-                <div class="article__content">
-                  <a href="" class="article__tag article__tag--green">
-                    Beutiful Profile
-                  </a>
-                  <a href="" class="article__title">
-                    These Mental Health Podcasts Will Make You
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="article-card article-card--editor-pick">
-                <a href="" class="article__image">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt=""
-                  />
-                </a>
-                <div class="article__content">
+                <div class="article__content px-0">
                   <a href="" class="article__tag article__tag--green">
                     Beutiful Profile
                   </a>
@@ -1068,8 +1119,8 @@
     <footer>
       <div class="top-footer-wrapper">
         <div class="container">
-          <div class="row gx-5">
-            <div class="col-md-4 pe-5">
+          <div class="row gx-md-5">
+            <div class="col-md-4 pe-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 About US
               </h3>
@@ -1102,7 +1153,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 px-5">
+            <div class="col-md-4 px-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 Latest Posts
               </h3>
@@ -1166,7 +1217,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 ps-5">
+            <div class="col-md-4 ps-md-5">
               <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
               <ul class="article-tabs-list article-tabs--white">
                 <li>
@@ -1202,7 +1253,7 @@
         <div class="container">
           <div class="bottom-footer">
             <p class="copyright-text">
-              @2023: all copyright reserved to topnepal
+              @2023: all copyright reserved to broadbiography
             </p>
             <ul class="footer-quicks-nav">
               <li>
@@ -1237,6 +1288,13 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- slick slider js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- custom script -->
     <script src="./script/script.js"></script>
   </body>
