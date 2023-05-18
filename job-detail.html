@@ -20,6 +20,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- slick slider css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- custom css link -->
     <link rel="stylesheet" href="./style/main.css" />
   </head>
@@ -146,7 +162,7 @@
           <div class="text-center">
             <h6 class="text text-md text-uppercase">Follow on Social media</h6>
           </div>
-          <ul class="social-media-list">
+          <ul class="social-media-list socila-media--circle">
             <li>
               <a href="" class="social-media__item facebook">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -248,14 +264,14 @@
       aria-labelledby="modal--jobApply-form"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-mob-responsive">
         <div class="modal-content">
           <div class="modal-body">
             <button class="button-close" data-bs-dismiss="modal">
               <i class="fa-solid fa-xmark"></i>
             </button>
             <div class="section-title section-title--center">
-              <h2 class="section-title__heading">Apply for the jov</h2>
+              <h2 class="section-title__heading">Apply for the job</h2>
               <p class="section-title__description">
                 All required Field Should be filled
               </p>
@@ -329,6 +345,13 @@
               >
                 <i class="fa-solid fa-bars"></i>
               </button>
+              <a href="" class="brand-logo">
+                <img
+                  class="logo-image"
+                  src="./images/logo/original-logo.png"
+                  alt="brand-logo"
+                />
+              </a>
               <button
                 class="search-button"
                 data-bs-toggle="modal"
@@ -505,7 +528,7 @@
                         <span class="job__label">Job Location </span>
                         <div class="job__text">
                           <span class="label__devider">:</span>
-                          Kathmandu,Nepal
+                          Kathmandu, Nepal
                         </div>
                       </li>
                       <li class="stripe__item">
@@ -555,37 +578,37 @@
                   <div class="job__content">
                     <h3 class="job__subtitle">Basic Job Information</h3>
                     <ul class="description-list">
-                      <li class="deccription__item">
+                      <li class="description__item">
                         Must have a Bachelors’/ Masters’ degree in related
                         applicable field
                       </li>
-                      <li class="deccription__item">
+                      <li class="description__item">
                         Should have strong English and Nepali communication
                         including writing skills
                       </li>
-                      <li class="deccription__item">
+                      <li class="description__item">
                         Fresh Graduates may also apply
                       </li>
-                      <li class="deccription__item">
+                      <li class="description__item">
                         Applicants with 6 months to 2 years’ experience in a
                         marketing/advertising agency/event management would be
                         given high preference
                       </li>
-                      <li class="deccription__item">
+                      <li class="description__item">
                         Managing events in a challenging environment and
                         addressing l problems that may arise
                       </li>
-                      <li class="deccription__item">
+                      <li class="description__item">
                         Must have good writing skill and maintaining
                         relationships with partner organizations, speakers and
                         delegates
                       </li>
-                      <li class="deccription__item">
+                      <li class="description__item">
                         Should be a self-motivated and result-driven Individual
                         interested in Exhibition/demonstrative Sales, Marketing
                         and Management
                       </li>
-                      <li class="deccription__item">
+                      <li class="description__item">
                         Should be target focused and develop strategies for
                         better return
                       </li>
@@ -595,21 +618,23 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div
-                class="d-flex justify-content-center flex-column text-center align-items-center sticky-md-top"
-              >
-                <button
-                  class="button button--green"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal__jobApply-form"
+              <div class="mob-border-top">
+                <div
+                  class="d-flex justify-content-center flex-column text-center align-items-center sticky-md-top"
                 >
-                  Apply Now
-                </button>
-                <p class="job__note">
-                  (Note : Clearly understand the job title and description to
-                  ensure it aligns with your skills, experience, and career
-                  goals.)
-                </p>
+                  <button
+                    class="button button--green"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal__jobApply-form"
+                  >
+                    Apply Now
+                  </button>
+                  <p class="job__note">
+                    (Note : Clearly understand the job title and description to
+                    ensure it aligns with your skills, experience, and career
+                    goals.)
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -619,8 +644,8 @@
     <footer>
       <div class="top-footer-wrapper">
         <div class="container">
-          <div class="row gx-5">
-            <div class="col-md-4 pe-5">
+          <div class="row gx-md-5">
+            <div class="col-md-4 pe-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 About US
               </h3>
@@ -653,7 +678,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 px-5">
+            <div class="col-md-4 px-md-5 mb-5 mb-md-0">
               <h3 class="text text--lg text--white text--bold mb-40px">
                 Latest Posts
               </h3>
@@ -717,7 +742,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4 ps-5">
+            <div class="col-md-4 ps-md-5">
               <h3 class="text text--lg text--white text--bold mb-40px">Tags</h3>
               <ul class="article-tabs-list article-tabs--white">
                 <li>
@@ -753,7 +778,7 @@
         <div class="container">
           <div class="bottom-footer">
             <p class="copyright-text">
-              @2023: all copyright reserved to topnepal
+              @2023: all copyright reserved to broadbiography
             </p>
             <ul class="footer-quicks-nav">
               <li>
@@ -773,7 +798,7 @@
         </div>
       </div>
     </footer>
-    <!-- boostrap script -->
+    <!-- bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -788,6 +813,13 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- slick slider js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- custom script -->
     <script src="./script/script.js"></script>
   </body>

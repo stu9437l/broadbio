@@ -67,8 +67,10 @@ function checkMobileScreen() {
       centerPadding: "24px",
     });
     $(".mob-slider").addClass("mob-slider--gap");
+    $(".modal-mob-responsive").addClass("modal-fullscreen");
   } else {
     $(".mob-slider").removeClass("mob-slider--gap");
+    $(".modal-mob-responsive").removeClass("modal-fullscreen");
   }
 }
 

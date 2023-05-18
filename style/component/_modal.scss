@@ -138,3 +138,14 @@
     }
   }
 }
+
+// job apply modal form
+.modal--jobApply-form {
+    .modal-body {
+      padding: 64px;
+      .button-close {
+        top: 12px;
+        right: 12px;
+      }
+    }
+  }

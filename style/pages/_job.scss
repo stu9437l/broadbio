@@ -83,17 +83,19 @@
       }
       padding: 16px 24px;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       .job__label {
         width: 200px;
         color: $black-color;
         font-size: $md-font;
         font-weight: $regular;
+        flex-shrink: 0;
       }
       .label__devider {
         margin-right: 32px;
       }
       .job__text {
+        display: flex;
         color: $black-color;
         font-size: $md-font;
         font-weight: $semi-bold;
@@ -105,8 +107,8 @@
   }
   .description-list {
     list-style: circle;
-    list-style-position: inside;
-    .deccription__item {
+    // list-style-position: inside;
+    .description__item {
       margin-bottom: 12px;
     }
   }
@@ -119,15 +121,4 @@
   margin-bottom: 0;
   margin-top: 24px;
   font-weight: $regular;
-}
-
-// job apply modal form
-.modal--jobApply-form {
-  .modal-body {
-    padding: 64px;
-    .button-close {
-      top: 12px;
-      right: 12px;
-    }
-  }
 }
